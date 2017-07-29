@@ -3,9 +3,6 @@ package chap02;
 import java.math.BigDecimal;
 import java.util.Scanner;
 
-/**
- * Created by iCrazyTeam on 2016/4/11 0011.
- */
 public class Loop {
     public static void main(String[] args) {
         System.out.println(whileText(1000, 200, 0.5));
