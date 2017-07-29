@@ -1,6 +1,7 @@
 package core.day18;
 
-import java.io.*;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class FileReaderDemo {
     public static void main(String[] args) throws IOException {
@@ -14,7 +15,7 @@ public class FileReaderDemo {
         int ch = 0;
 
         while ((ch = fr.read()) != -1) {
-            System.out.println(
+            System.out.println(ch);
         }
 
 

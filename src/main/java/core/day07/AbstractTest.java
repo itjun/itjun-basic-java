@@ -12,7 +12,7 @@ package core.day07;
 
 */
 
-class Employee {
+abstract class Employee {
     private String name;
     private String id;
     private double pay;
@@ -51,9 +51,9 @@ class Pro extends Employee {
 
 }
 
-class{
+class AbstractTest {
 
-public static void main(String[]args){
+    public static void main(String[] args) {
         System.out.println("Hello World!");
-        }
-        }
+    }
+}
