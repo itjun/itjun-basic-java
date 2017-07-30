@@ -15,8 +15,6 @@ super():会访问父类中空参数的构造函数。而且子类中所有的构
 
 注意：super语句一定定义在子类构造函数的第一行。
 
-
-
 子类的实例化过程。
 
 结论：
@@ -28,12 +26,10 @@ super():会访问父类中空参数的构造函数。而且子类中所有的构
 当然：子类的构造函数第一行也可以手动指定this语句来访问本类中的构造函数。
 子类中至少会有一个构造函数会访问父类中的构造函数。
 */
-class Fu // extends Object
-{
+class Fu {
     int num;
 
     Fu() {
-        // super();
         num = 60;
         System.out.println("fu run");
     }
@@ -46,16 +42,15 @@ class Fu // extends Object
 
 class Zi extends Fu {
     Zi() {
-
         super();
         // super(4);
         System.out.println("zi run");
     }
 
     Zi(int x) {
-        this();
-        // super();
-        // super(3);
+//        this();
+//         super();
+        super(3);
         System.out.println("zi..." + x);
     }
 }

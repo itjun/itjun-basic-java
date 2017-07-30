@@ -15,16 +15,11 @@ package core.day07;
 super的使用和this的使用几乎一致。
 this代表的是本类对象的引用。
 super代表的是父类对象的引用。
-
-
-
-
-
 */
 
-class Fu {
+class Father {
     private int num = 4;
-
+    
     public int getNum() {
         return this.num;
     }
@@ -34,17 +29,15 @@ class Fu {
     }
 }
 
-class Zi extends Fu {
-    // int num = 5;
+class Son extends Father {
     void show() {
-        System.out.println(num);
+        System.out.println(super.getNum());
     }
 }
 
 public class ExtendsDemo2 {
     public static void main(String[] args) {
-        Zi z = new Zi();
-        z.show();
-        // System.out.println(z.num+"...."+z.num);
+        Son son = new Son();
+        son.show();
     }
 }
