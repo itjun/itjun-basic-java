@@ -11,9 +11,6 @@ Exceptoin中有一个特殊的子类异常RuntimeException 运行时异常。
 当该异常发生，希望程序停止。因为在运行时，出现了无法继续运算的情况，希望停止程序后，
 对代码进行修正。
 
-
-
-
 自定义异常时：如果该异常的发生，无法在继续进行运算，
 就让自定义异常继承RuntimeException。
 
@@ -25,16 +22,15 @@ Exceptoin中有一个特殊的子类异常RuntimeException 运行时异常。
 
 */
 
-class FuShuException extends RuntimeException {
-    FuShuException(String msg) {
+class FuShuException1 extends RuntimeException {
+    FuShuException1(String msg) {
         super(msg);
     }
 }
 
-class Demo {
+class Demo4 {
     int div(int a, int b) throws Exception// throws ArithmeticException
     {
-
         if (b < 0)
             throw new Exception("出现了除数为负数了");
         if (b == 0)
@@ -44,23 +40,10 @@ class Demo {
 }
 
 public class ExceptionDemo4 {
-    public static void main(String[] args) {
-
-        Demo d = new Demo();
-
+    public static void main(String[] args) throws Exception {
+        Demo4 d = new Demo4();
         int x = d.div(4, -9);
         System.out.println("x=" + x);
-
         System.out.println("over");
     }
 }
-
-/*
- * class Person { public void checkName(String name) {
- * 
- * //if(name.equals("lisi"))//NullPointerException
- * if("lisi".equals(name))//if(name!=null && name.equals("lisi"))
- * System.out.println("YES"); else System.out.println("no"); } }
- * 
- * main() { Person p = new Person(); p.checkName(null); }
- */

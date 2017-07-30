@@ -16,10 +16,14 @@ package core.day24;
 
 */
 
-import java.io.*;
-import java.net.*;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.ServerSocket;
+import java.net.Socket;
 
-class PicClient {
+class PicClient2 {
     public static void main(String[] args) throws Exception {
         Socket s = new Socket("192.168.1.254", 10007);
 

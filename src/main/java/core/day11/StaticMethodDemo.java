@@ -11,7 +11,7 @@ package core.day11;
 
 静态的同步方法，使用的锁是该方法所在类的字节码文件对象。 类名.class
 */
-class Ticket implements Runnable {
+class Ticket1 implements Runnable {
     private static int tick = 100;
     // Object obj = new Object();
     boolean flag = true;
@@ -30,7 +30,7 @@ class Ticket implements Runnable {
     public void run() {
         if (flag) {
             while (true) {
-                synchronized (Ticket.class) {
+                synchronized (Ticket1.class) {
                     if (tick > 0) {
                         try {
                             Thread.sleep(10);
@@ -48,9 +48,7 @@ class Ticket implements Runnable {
 
 public class StaticMethodDemo {
     public static void main(String[] args) {
-
-        Ticket t = new Ticket();
-
+        Ticket1 t = new Ticket1();
         Thread t1 = new Thread(t);
         Thread t2 = new Thread(t);
         t1.start();
@@ -60,6 +58,5 @@ public class StaticMethodDemo {
         }
         t.flag = false;
         t2.start();
-
     }
 }

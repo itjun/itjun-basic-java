@@ -77,33 +77,10 @@ c.show();
 聚合:
 
 组合：
-
-
-
-
 */
-
-class Person {
-    String name;
-    int age;
-
-}
-
-class Student extends Person {
-    void study() {
-        System.out.println("good study");
-    }
-}
-
-class Worker extends Person {
-    void work() {
-        System.out.println("good work");
-    }
-}
-
 public class ExtendsDemo {
     public static void main(String[] args) {
         Student s = new Student();
-        s.name = "zhagnsan";
+        s.setNmae("LiYi");
     }
 }

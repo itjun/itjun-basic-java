@@ -26,7 +26,7 @@ package core.day07;
 重写：子父类方法要一模一样。
 */
 
-class Fu {
+class Parent {
     void show() {
         System.out.println("fu show");
     }
@@ -36,7 +36,7 @@ class Fu {
     }
 }
 
-class Zi extends Fu {
+class Little extends Parent {
     @Override
     void speak() {
         System.out.println("java");
@@ -50,9 +50,8 @@ class Zi extends Fu {
 
 public class ExtendsDemo3 {
     public static void main(String[] args) {
-        Zi z = new Zi();
-        z.speak();
-
+        Little little = new Little();
+        little.show();
     }
 }
 
@@ -66,7 +65,6 @@ class Tel {
 class NewTel extends Tel {
     @Override
     void show() {
-        // System.out.println("number");
         super.show();
         System.out.println("name");
         System.out.println("pic");

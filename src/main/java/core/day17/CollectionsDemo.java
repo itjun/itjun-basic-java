@@ -40,13 +40,13 @@ public class CollectionsDemo {
         list.add("kkkkk");
         list.add("qq");
         list.add("z");
-        Collections.sort(list, new StrLenComparator());
+        Collections.sort(list, new StrLenComparator2());
 
         sop(list);
 
         // int index = Collections.binarySearch(list,"aaaa");
         // int index = halfSearch(list,"cc");
-        int index = halfSearch2(list, "aaaa", new StrLenComparator());
+        int index = halfSearch2(list, "aaaa", new StrLenComparator2());
         sop("index=" + index);
     }
 
@@ -120,7 +120,7 @@ public class CollectionsDemo {
         sop(list);
 
         // Collections.sort(list);
-        Collections.sort(list, new StrLenComparator());
+        Collections.sort(list, new StrLenComparator2());
         // Collections.swap(list,1,2);
         sop(list);
 
@@ -131,7 +131,7 @@ public class CollectionsDemo {
     }
 }
 
-class StrLenComparator implements Comparator<String> {
+class StrLenComparator2 implements Comparator<String> {
     @Override
     public int compare(String s1, String s2) {
         if (s1.length() > s2.length())

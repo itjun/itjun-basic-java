@@ -41,7 +41,7 @@ synchronized(对象)
 弊端：多个线程需要判断锁，较为消耗资源，
 
 */
-class Ticket implements Runnable {
+class Ticket3 implements Runnable {
     Object obj = new Object();
     private int tick = 1000;
 
@@ -60,9 +60,7 @@ class Ticket implements Runnable {
 
 public class TicketDemo2 {
     public static void main(String[] args) {
-
-        Ticket t = new Ticket();
-
+        Ticket3 t = new Ticket3();
         Thread t1 = new Thread(t);
         Thread t2 = new Thread(t);
         Thread t3 = new Thread(t);

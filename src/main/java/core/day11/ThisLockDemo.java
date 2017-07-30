@@ -15,7 +15,7 @@ package core.day11;
 
 
 */
-class Ticket implements Runnable {
+class Ticket4 implements Runnable {
     Object obj = new Object();
     boolean flag = true;
     private int tick = 100;
@@ -53,9 +53,7 @@ class Ticket implements Runnable {
 
 public class ThisLockDemo {
     public static void main(String[] args) {
-
-        Ticket t = new Ticket();
-
+        Ticket4 t = new Ticket4();
         Thread t1 = new Thread(t);
         Thread t2 = new Thread(t);
         t1.start();
