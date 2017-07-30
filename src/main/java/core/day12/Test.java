@@ -10,7 +10,7 @@ class MyThread extends Thread {
     }
 }
 
-public class ThreadTest {
+public class Test {
     public static void main(String argv[]) {
         MyThread t = new MyThread();
         t.run();
