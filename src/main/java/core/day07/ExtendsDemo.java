@@ -103,7 +103,7 @@ class Worker extends Person {
 
 public class ExtendsDemo {
     public static void main(String[] args) {
-        Student s = new Student();
+        AbstractStudent s = new AbstractStudent();
         s.name = "zhagnsan";
     }
 }

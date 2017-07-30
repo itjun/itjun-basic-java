@@ -1,6 +1,6 @@
 package core.day07;
 /*
-abstract class Student
+abstract class AbstractStudent
 {
 	abstract void study();
 	void sleep()
@@ -15,12 +15,12 @@ interface Smoking
 	void smoke();
 }
 
-class ZhangSan extends Student implements Smoking
+class ZhangSan extends AbstractStudent implements Smoking
 {
 	void study(){}
 	public void smoke(){}
 }
-class Lisi extends Student 
+class Lisi extends AbstractStudent
 {
 }
 

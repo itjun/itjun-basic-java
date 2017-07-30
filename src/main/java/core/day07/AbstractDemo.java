@@ -10,7 +10,7 @@ package core.day07;
 2，抽象方法和抽象类都必须被abstract关键字修饰。
 3，抽象类不可以用new创建对象。因为调用抽象方法没意义。
 4，抽象类中的抽象方法要被使用，必须由子类复写起所有的抽象方法后，建立子类对象调用。
-	如果子类只覆盖了部分抽象方法，那么该子类还是一个抽象类。
+    如果子类只覆盖了部分抽象方法，那么该子类还是一个抽象类。
 
 
 抽象类和一般类没有太大的不同。
@@ -41,30 +41,21 @@ static：如果static可以修饰抽象方法，那么连对象都省了，直�
 
 */
 
-abstract class Student {
-    abstract final void study();
-
-    // abstract void study1();
-    void sleep() {
-        System.out.println("躺着");
-    }
-}
-
 /*
  * 
- * class ChongCiStudent extends Student { void study() {
+ * class ChongCiStudent extends AbstractStudent { void study() {
  * System.out.println("chongci study"); } }
  * 
- * class BaseStudent extends Student { void study() {
+ * class BaseStudent extends AbstractStudent { void study() {
  * System.out.println("base study"); } }
  * 
- * class AdvStudent extends Student { void study() {
+ * class AdvStudent extends AbstractStudent { void study() {
  * System.out.println("adv study"); } }
  */
 
 public class AbstractDemo {
     public static void main(String[] args) {
-        // new Student();
+        // new AbstractStudent();
         // new BaseStudent().study();
     }
 }
