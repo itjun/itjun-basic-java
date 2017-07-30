@@ -2,7 +2,6 @@ package core.day11;
 /*
 死锁。
 同步中嵌套同步。
-
 */
 
 class Ticket implements Runnable {
@@ -39,9 +38,7 @@ class Ticket implements Runnable {
 
 public class DeadLockDemo {
     public static void main(String[] args) {
-
         Ticket t = new Ticket();
-
         Thread t1 = new Thread(t);
         Thread t2 = new Thread(t);
         t1.start();
@@ -51,6 +48,5 @@ public class DeadLockDemo {
         }
         t.flag = false;
         t2.start();
-
     }
 }
