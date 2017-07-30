@@ -1,9 +1,9 @@
 package core.day14;
 
+import core.day01.HelloWorld;
+
 import java.util.ArrayList;
 import java.util.Iterator;
-
-import core.day01.HelloWorld;
 
 /*
 将自定义对象作为元素存到ArrayList集合中，并去除重复元素。
@@ -23,11 +23,11 @@ List集合判断元素是否相同，依据是元素的equals方法。
 
 
 */
-class Person {
+class Person2 {
     private String name;
     private int age;
 
-    Person(String name, int age) {
+    Person2(String name, int age) {
         this.name = name;
         this.age = age;
     }
@@ -35,10 +35,10 @@ class Person {
     @Override
     public boolean equals(Object obj) {
 
-        if (!(obj instanceof Person))
+        if (!(obj instanceof Person2))
             return false;
 
-        Person p = (Person) obj;
+        Person2 p = (Person2) obj;
         // System.out.println(this.name+"....."+p.name);
 
         return this.name.equals(p.name) && this.age == p.age;
@@ -61,24 +61,22 @@ public class ArrayListTest2 {
 
     public static void main(String[] args) {
         ArrayList al = new ArrayList();
-
         al.add(new HelloWorld());
-
-        al.add(new Person("lisi01", 30));// al.add(Object obj);//Object obj = new Person("lisi01",30);
+        al.add(new Person2("lisi01", 30));// al.add(Object obj);//Object obj = new Person("lisi01",30);
         // al.add(new Person("lisi02",32));
-        al.add(new Person("lisi02", 32));
-        al.add(new Person("lisi04", 35));
-        al.add(new Person("lisi03", 33));
+        al.add(new Person2("lisi02", 32));
+        al.add(new Person2("lisi04", 35));
+        al.add(new Person2("lisi03", 33));
         // al.add(new Person("lisi04",35));
 
         // al = singleElement(al);
 
-        sop("remove 03 :" + al.remove(new Person("lisi03", 33)));// remove方法底层也是依赖于元素的equals方法。
+        sop("remove 03 :" + al.remove(new Person2("lisi03", 33)));// remove方法底层也是依赖于元素的equals方法。
 
         Iterator it = al.iterator();
 
         while (it.hasNext()) {
-            Person p = (Person) it.next();
+            Person2 p = (Person2) it.next();
             sop(p.getName() + "::" + p.getAge());
         }
     }

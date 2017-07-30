@@ -4,9 +4,8 @@ package core.day12;
 线程间通讯：
 其实就是多个线程在操作同一个资源，
 但是操作的动作不同。
-
 */
-class Res {
+class Res2 {
     private String name;
     private String sex;
     private boolean flag = false;
@@ -36,10 +35,10 @@ class Res {
     }
 }
 
-class Input implements Runnable {
-    private Res r;
+class Input2 implements Runnable {
+    private Res2 r;
 
-    Input(Res r) {
+    Input2(Res2 r) {
         this.r = r;
     }
 
@@ -50,16 +49,16 @@ class Input implements Runnable {
             if (x == 0)
                 r.set("mike", "man");
             else
-                r.set("丽丽", "女女女女女");
+                r.set("涓戒附", "濂冲コ濂冲コ濂�");
             x = (x + 1) % 2;
         }
     }
 }
 
-class Output implements Runnable {
-    private Res r;
+class Output2 implements Runnable {
+    private Res2 r;
 
-    Output(Res r) {
+    Output2(Res2 r) {
         this.r = r;
     }
 
@@ -73,12 +72,12 @@ class Output implements Runnable {
 
 public class InputOutputDemo2 {
     public static void main(String[] args) {
-        Res r = new Res();
+        Res2 r = new Res2();
 
-        new Thread(new Input(r)).start();
-        new Thread(new Output(r)).start();
+        new Thread(new Input2(r)).start();
+        new Thread(new Output2(r)).start();
         /*
-		 * Input in = new Input(r); Output out = new Output(r);
+         * Input in = new Input(r); Output out = new Output(r);
 		 * 
 		 * Thread t1 = new Thread(in); Thread t2 = new Thread(out);
 		 * 

@@ -1,12 +1,12 @@
 package core.day17;
 
-import java.util.ArrayList;
-
 import core.day16.Student;
+
+import java.util.ArrayList;
 
 public class Test {
     public static void main(String[] args) {
-        ArrayList<? extends Person> al = new ArrayList<Student>();
+        ArrayList<? extends Student> al = new ArrayList<Student>();
 
     }
 }

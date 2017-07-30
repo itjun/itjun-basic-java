@@ -7,14 +7,14 @@ import java.util.TreeSet;
 public class GenericDemo7 {
     public static void main(String[] args) {
 
-        TreeSet<Student> ts = new TreeSet<Student>(new Comp());
+        TreeSet<Student7> ts = new TreeSet<Student7>(new Comp());
 
-        ts.add(new Student("abc03"));
-        ts.add(new Student("abc02"));
-        ts.add(new Student("abc06"));
-        ts.add(new Student("abc01"));
+        ts.add(new Student7("abc03"));
+        ts.add(new Student7("abc02"));
+        ts.add(new Student7("abc06"));
+        ts.add(new Student7("abc01"));
 
-        Iterator<Student> it = ts.iterator();
+        Iterator<Student7> it = ts.iterator();
 
         while (it.hasNext()) {
             System.out.println(it.next().getName());
@@ -44,17 +44,17 @@ public class GenericDemo7 {
  * s1,Worker s2) { return s1.getName().compareTo(s2.getName()); } }
  */
 
-class Comp implements Comparator<Person> {
+class Comp implements Comparator<Person7> {
     @Override
-    public int compare(Person p1, Person p2) {
+    public int compare(Person7 p1, Person7 p2) {
         return p2.getName().compareTo(p1.getName());
     }
 }
 
-class Person {
+class Person7 {
     private String name;
 
-    Person(String name) {
+    Person7(String name) {
         this.name = name;
     }
 
@@ -68,14 +68,14 @@ class Person {
     }
 }
 
-class Student extends Person {
-    Student(String name) {
+class Student7 extends Person7 {
+    Student7(String name) {
         super(name);
     }
 
 }
 
-class Worker extends Person {
+class Worker extends Person7 {
     Worker(String name) {
         super(name);
     }

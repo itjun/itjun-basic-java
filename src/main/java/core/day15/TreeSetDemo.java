@@ -43,27 +43,27 @@ public class TreeSetDemo {
     public static void main(String[] args) {
         TreeSet ts = new TreeSet();
 
-        ts.add(new Student("lisi02", 22));
-        ts.add(new Student("lisi007", 20));
-        ts.add(new Student("lisi09", 19));
-        ts.add(new Student("lisi08", 19));
+        ts.add(new Student2("lisi02", 22));
+        ts.add(new Student2("lisi007", 20));
+        ts.add(new Student2("lisi09", 19));
+        ts.add(new Student2("lisi08", 19));
         // ts.add(new Student("lisi007",20));
         // ts.add(new Student("lisi01",40));
 
         Iterator it = ts.iterator();
         while (it.hasNext()) {
-            Student stu = (Student) it.next();
+            Student2 stu = (Student2) it.next();
             System.out.println(stu.getName() + "..." + stu.getAge());
         }
     }
 }
 
-class Student implements Comparable// 该接口强制让学生具备比较性。
+class Student2 implements Comparable// 该接口强制让学生具备比较性。
 {
     private String name;
     private int age;
 
-    Student(String name, int age) {
+    Student2(String name, int age) {
         this.name = name;
         this.age = age;
     }
@@ -73,9 +73,9 @@ class Student implements Comparable// 该接口强制让学生具备比较性。
 
         // return 0;
 
-        if (!(obj instanceof Student))
+        if (!(obj instanceof Student2))
             throw new RuntimeException("不是学生对象");
-        Student s = (Student) obj;
+        Student2 s = (Student2) obj;
 
         System.out.println(this.name + "....compareto....." + s.name);
         if (this.age > s.age)

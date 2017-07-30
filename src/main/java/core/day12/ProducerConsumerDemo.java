@@ -2,10 +2,10 @@ package core.day12;
 
 public class ProducerConsumerDemo {
     public static void main(String[] args) {
-        Resource r = new Resource();
+        Resource2 r = new Resource2();
 
-        Producer pro = new Producer(r);
-        Consumer con = new Consumer(r);
+        Producer2 pro = new Producer2(r);
+        Consumer2 con = new Consumer2(r);
 
         Thread t1 = new Thread(pro);
         Thread t2 = new Thread(pro);
@@ -28,7 +28,7 @@ public class ProducerConsumerDemo {
  * 
  */
 
-class Resource {
+class Resource2 {
     private String name;
     private int count = 1;
     private boolean flag = false;
@@ -60,10 +60,10 @@ class Resource {
     }
 }
 
-class Producer implements Runnable {
-    private Resource res;
+class Producer2 implements Runnable {
+    private Resource2 res;
 
-    Producer(Resource res) {
+    Producer2(Resource2 res) {
         this.res = res;
     }
 
@@ -75,10 +75,10 @@ class Producer implements Runnable {
     }
 }
 
-class Consumer implements Runnable {
-    private Resource res;
+class Consumer2 implements Runnable {
+    private Resource2 res;
 
-    Consumer(Resource res) {
+    Consumer2(Resource2 res) {
         this.res = res;
     }
 
