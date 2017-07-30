@@ -26,11 +26,8 @@ package core.day09;
 所以子类只要在构造时，将异常信息传递给父类通过super语句。
 那么就可以直接通过getMessage方法获取自定义的异常信息。
 
-
-
 自定义异常：
 必须是自定义类继承Exception。
-
 
 继承Exception原因：
 异常体系有一个特点：因为异常类和异常对象都被抛出。
@@ -38,17 +35,12 @@ package core.day09;
 
 只有这个体系中的类和对象才可以被throws和throw操作。
 
-
-
 throws和throw的区别
-throws使用在函数上。
-throw使用在函数内。
+    throws使用在函数上。
+    throw使用在函数内。
 
-throws后面跟的异常类。可以跟多个。用逗号隔开。
-throw后跟的是异常对象。
-
-
-
+throws 后面跟的异常类。可以跟多个。用逗号隔开。
+throw 后跟的是异常对象。
 */
 class FuShuException extends Exception // getMessage();
 {
@@ -69,7 +61,7 @@ class FuShuException extends Exception // getMessage();
 
 }
 
-class Demo {
+class Demo3 {
     int div(int a, int b) throws FuShuException {
         if (b < 0)
             throw new FuShuException("出现了除数是负数的情况------ / by fushu", b);// 手动通过throw关键字抛出一个自定义异常对象。
@@ -80,7 +72,7 @@ class Demo {
 
 public class ExceptionDemo3 {
     public static void main(String[] args) {
-        Demo d = new Demo();
+        Demo3 d = new Demo3();
         try {
             int x = d.div(4, -9);
             System.out.println("x=" + x);
@@ -89,9 +81,7 @@ public class ExceptionDemo3 {
             // System.out.println("除数出现负数了");
             System.out.println("错误的负数是：" + e.getValue());
         }
-
         System.out.println("over");
-
     }
 }
 

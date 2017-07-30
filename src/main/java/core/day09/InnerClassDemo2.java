@@ -52,7 +52,7 @@ class Body
 
 
 */
-class Outer {
+class Outer2 {
     private static int x = 3;
 
     public static void method() {
@@ -77,7 +77,7 @@ class Outer {
 
 public class InnerClassDemo2 {
     public static void main(String[] args) {
-        Outer.method();
+        Outer2.method();
         // Outer.Inner.function();
         // new Outer.Inner().function();
         // 直接访问内部类中的成员。
