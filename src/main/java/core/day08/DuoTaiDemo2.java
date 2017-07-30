@@ -38,39 +38,6 @@ package core.day08;
 猫，狗。
 */
 
-class Cat extends Animal {
-    @Override
-    public void eat() {
-        System.out.println("吃鱼");
-    }
-
-    public void catchMouse() {
-        System.out.println("抓老鼠");
-    }
-}
-
-class Dog extends Animal {
-    @Override
-    public void eat() {
-        System.out.println("吃骨头");
-    }
-
-    public void kanJia() {
-        System.out.println("看家");
-    }
-}
-
-class Pig extends Animal {
-    @Override
-    public void eat() {
-        System.out.println("饲料");
-    }
-
-    public void gongDi() {
-        System.out.println("拱地");
-    }
-}
-
 // -----------------------------------------
 public class DuoTaiDemo2 {
     public static void main(String[] args) {
