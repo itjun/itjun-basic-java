@@ -19,14 +19,17 @@ java中23种设计模式：
 */
 
 public class Single {
-    private static Single single = new Single();
+    private static Single instance = new Single();
     private int num;
 
     private Single() {
+        if (instance != null) {
+            throw new RuntimeException("Single instance is not null");
+        }
     }
 
     public static Single getInstance() {
-        return single;
+        return instance;
     }
 
     public static void main(String[] args) {
