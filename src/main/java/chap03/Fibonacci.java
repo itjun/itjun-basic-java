@@ -8,6 +8,12 @@ public class Fibonacci {
         System.out.println(fib1(5));
         System.out.println(fib2(100));
         System.out.println(fib3(64));
+
+        int n = 2000;
+        long[] fib = generateFibonaccis(n);
+        for (int i = 0; i < n; i++) {
+            System.out.print(Long.toUnsignedString(fib[i]) + " ");
+        }
     }
 
     /**
@@ -17,7 +23,6 @@ public class Fibonacci {
      * @return
      */
     public static long fib1(long n) {
-        // FIXME 还不算完整，想办法把结果存到数组，计算无穷大
         if (n < 2)
             return 1;
         else
@@ -50,4 +55,15 @@ public class Fibonacci {
         double y = (1 - z) / 2;
         return (Math.pow(x, n) - Math.pow(y, n)) / z + 0.5;
     }
+
+    public static long[] generateFibonaccis(int n) {
+        long[] fib = new long[n];
+        fib[0] = 1;
+        fib[1] = 1;
+        for (int i = 2; i < n; ++i) {
+            fib[i] = fib[i - 2] + fib[i - 1];
+        }
+        return fib;
+    }
+
 }
