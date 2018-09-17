@@ -1,4 +1,4 @@
-# i-java
+# java-examples
 
 [![Build Status](https://secure.travis-ci.org/HuangRongjun/i-java.png)](https://travis-ci.org/HuangRongjun/java-examples)
 
