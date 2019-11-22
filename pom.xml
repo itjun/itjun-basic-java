@@ -60,7 +60,7 @@
             <version>3.4.0</version>
         </dependency>
 
-        <!-- json -->
+        <!-- io.itjun.examples.json -->
         <dependency>
             <groupId>net.sf.json-lib</groupId>
             <artifactId>json-lib</artifactId>
