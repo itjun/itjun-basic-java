@@ -12,8 +12,8 @@ public class ForTest4 {
         }
         System.out.println("day=" + day);
 
-		/*
+        /*
          * for(int x=3000; x>=5; day++) { x = x/2; }
-		 */
+         */
     }
 }

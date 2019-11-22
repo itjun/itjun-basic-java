@@ -1,11 +1,9 @@
 package core.day22;
 
-import java.awt.FlowLayout;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-
-import javax.swing.JButton;
-import javax.swing.JFrame;
 
 public class SwingDemo {
     public static void main(String[] args) {

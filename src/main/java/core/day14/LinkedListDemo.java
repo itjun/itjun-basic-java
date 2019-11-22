@@ -63,8 +63,8 @@ public class LinkedListDemo {
     }
 }
 /*
- * 
+ *
  * --- java01 java02 java03 java04
- * 
+ *
  * ---- java04 java03 java02 java01 ---
  */

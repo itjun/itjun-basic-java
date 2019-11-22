@@ -12,8 +12,8 @@ class Zi extends Fu {
         this.show();
     }
     /*
-	 * void show() { System.out.println("zi show"); }
-	 */
+     * void show() { System.out.println("zi show"); }
+     */
 }
 
 public class FuZi {

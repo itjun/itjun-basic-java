@@ -7,9 +7,9 @@ interface Inter {
 class Test {
     // 补足代码。通过匿名内部类。
     /*
-	 * static class Inner implements Inter { public void method() {
-	 * System.out.println("method run"); } }
-	 */
+     * static class Inner implements Inter { public void method() {
+     * System.out.println("method run"); } }
+     */
 
     static Inter function() {
         return new Inter() {

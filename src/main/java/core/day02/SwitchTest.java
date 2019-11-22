@@ -35,13 +35,13 @@ public class SwitchTest {
 
         }
 
-		/*
+        /*
          * if和switch语句很像。 具体什么场景下，应用哪个语句呢？ 如果判断的具体数值不多，而是符合byte short int char这四种类型。
-		 * 虽然两个语句都可以使用，建议使用swtich语句。因为效率稍高。
-		 * 
-		 * 其他情况：对区间判断，对结果为boolean类型判断，使用if，if的使用范围更广。
-		 * 
-		 */
+         * 虽然两个语句都可以使用，建议使用swtich语句。因为效率稍高。
+         *
+         * 其他情况：对区间判断，对结果为boolean类型判断，使用if，if的使用范围更广。
+         *
+         */
         System.out.println("Hello World!");
     }
 }

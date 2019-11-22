@@ -21,11 +21,12 @@ interface 用于定义接口。
 
 interface Inter {
     int NUM = 3;
+
     void show();
 }
 
 interface InterA {
-     void show();
+    void show();
 }
 
 interface A {

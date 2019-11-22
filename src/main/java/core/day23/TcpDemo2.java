@@ -1,7 +1,9 @@
 package core.day23;
 
-import java.io.*;
-import java.net.*;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.ServerSocket;
+import java.net.Socket;
 /*
 演示tcp的传输的客户端和服务端的互访。
 

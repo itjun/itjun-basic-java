@@ -17,10 +17,10 @@ package core.day13;
 */
 public class StringTest2 {
 
-	/*
+    /*
      * 练习三。
-	 * 
-	 */
+     *
+     */
 
     public static int getSubCount(String str, String key) {
         int count = 0;

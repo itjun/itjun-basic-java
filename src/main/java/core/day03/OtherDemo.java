@@ -28,9 +28,9 @@ public class OtherDemo {
             }
         }
 
-		/*
+        /*
          * 记住： 1，break和continue语句作用的范围。 2，break和continue单独存在时，下面可以有任何语句。因为都执行不到。
-		 */
+         */
 
         // break;
         // continue;

@@ -13,6 +13,7 @@ byte[] -->String: new String(byte[],charsetName);
 
 */
 
+import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 
 public class EncodeDemo {
@@ -22,11 +23,11 @@ public class EncodeDemo {
         byte[] b1 = s.getBytes("GBK");
 
         System.out.println(Arrays.toString(b1));
-        String s1 = new String(b1, "utf-8");
+        String s1 = new String(b1, StandardCharsets.UTF_8);
         System.out.println("s1=" + s1);
 
         // 对s1进行iso8859-1编码。
-        byte[] b2 = s1.getBytes("utf-8");
+        byte[] b2 = s1.getBytes(StandardCharsets.UTF_8);
         System.out.println(Arrays.toString(b2));
 
         String s2 = new String(b2, "gbk");

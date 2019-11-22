@@ -25,7 +25,7 @@ public class Test2 {
     }
 
     /**
-
+     *
      */
     public static String numberStringSort(String str) {
         String[] arr = splitString(str);
@@ -36,7 +36,7 @@ public class Test2 {
 
     /*
 
-    */
+     */
     private static String[] splitString(String str) {
         return str.split(" ");
     }

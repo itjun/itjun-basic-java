@@ -6,9 +6,9 @@ package core.day08;
 */
 
 interface PCI {
-    public void open();
+    void open();
 
-    public void close();
+    void close();
 }
 
 class MainBoard {
@@ -54,7 +54,7 @@ class SoundCard implements PCI {
 /*
  * class MainBoard { public void run() { System.out.println("mainboard run"); }
  * public void useNetCard(NetCard c) { c.open(); c.close(); } }
- * 
+ *
  * class NetCard { public void open() { System.out.println("netcard open"); }
  * public void close() { System.out.println("netcard close"); } }
  */

@@ -1,8 +1,6 @@
 package core.day22;
 
-import java.awt.Button;
-import java.awt.FlowLayout;
-import java.awt.Frame;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
@@ -52,10 +50,10 @@ public class FrameDemo {
 
         // 让按钮具备退出程序的功能
         /*
-		 * 按钮就是事件源。 那么选择哪个监听器呢？ 通过关闭窗体示例了解到，想要知道哪个组件具备什么样的特有监听器。 需要查看该组件对象的功能。
-		 * 通过查阅button的描述。发现按钮支持一个特有监听addActionListener。
-		 *
-		 */
+         * 按钮就是事件源。 那么选择哪个监听器呢？ 通过关闭窗体示例了解到，想要知道哪个组件具备什么样的特有监听器。 需要查看该组件对象的功能。
+         * 通过查阅button的描述。发现按钮支持一个特有监听addActionListener。
+         *
+         */
         but.addActionListener(new ActionListener() {
             private int count = 1;
 

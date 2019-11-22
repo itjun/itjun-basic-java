@@ -1,12 +1,12 @@
 package core.day04;
 
 public /*
-         * 给定一个数组{5,1,6,4,2,8,9}。
-		 * 
-		 * 1，获取数组中的最大值，以及最小值。
-		 * 
-		 * 
-		 */
+ * 给定一个数组{5,1,6,4,2,8,9}。
+ *
+ * 1，获取数组中的最大值，以及最小值。
+ *
+ *
+ */
 
 class ArrayTest {
 
@@ -58,11 +58,11 @@ class ArrayTest {
     }
 
     // 获取double类型数组的最大值。因为功能一致，所以定义相同函数名称。以重载形式存在。
-	/*
-	 * public static double getMax(double[] arr) {
-	 * 
-	 * }
-	 */
+    /*
+     * public static double getMax(double[] arr) {
+     *
+     * }
+     */
     public static void main(String[] args) {
         int[] arr = {5, 1, 6, 4, 2, 8, 9};
 

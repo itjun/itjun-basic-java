@@ -41,20 +41,20 @@ public class FunctionOverload {
 }
 
 /*
- * 
+ *
  * void show(int a,char b,double c){}
- * 
+ *
  * a. void show(int x,char y,double z){}//没有，因为和原函数一样。
- * 
+ *
  * b. int show(int a,double c,char b){}//重载，因为参数类型不同。注意：重载和返回值类型没关系。 c.
- * 
+ *
  * void show(int a,double c,char b){}//重载，因为参数类型不同。注意：重载和返回值类型没关系。
- * 
+ *
  * d. boolean show(int c,char b){}//重载了，因为参数个数不同。
- * 
+ *
  * e. void show(double c){}//重载了，因为参数个数不同。
- * 
+ *
  * f. double show(int x,char y,double z){}//没有，这个函数不可以和给定函数同时存在与一个类中。
- * 
- * 
+ *
+ *
  */

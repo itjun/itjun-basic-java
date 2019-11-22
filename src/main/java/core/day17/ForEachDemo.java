@@ -44,10 +44,10 @@ public class ForEachDemo {
 
         System.out.println(al);
         /*
-		 * Iterator<String> it = al.iterator();
-		 * 
-		 * while(it.hasNext()) { System.out.println(it.next()); }
-		 */
+         * Iterator<String> it = al.iterator();
+         *
+         * while(it.hasNext()) { System.out.println(it.next()); }
+         */
 
         int[] arr = {3, 5, 1};
 

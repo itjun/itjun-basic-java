@@ -39,7 +39,7 @@ public class GenericDemo7 {
 /*
  * class StuComp implements Comparator<Student> { public int compare(Student
  * s1,Student s2) { return s1.getName().compareTo(s2.getName()); } }
- * 
+ *
  * class WorkerComp implements Comparator<Worker> { public int compare(Worker
  * s1,Worker s2) { return s1.getName().compareTo(s2.getName()); } }
  */

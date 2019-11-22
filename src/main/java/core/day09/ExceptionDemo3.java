@@ -88,18 +88,18 @@ public class ExceptionDemo3 {
 /*
  * class Throwable { private String message; Throwable(String message) {
  * this.message = message; }
- * 
+ *
  * public String getMessage() { return message; } }
- * 
+ *
  * class Exception extends Throwable { Exception(String message) {
  * super(message); } }
- * 
- * 
+ *
+ *
  * class Person { String name; Person(String name) { this.name = name; } public
  * String getName() { return name; } }
- * 
+ *
  * class Student extends Person { Student (String name) { super(name); } }
- * 
+ *
  * new Sttdent("lisi").getName();
- * 
+ *
  */

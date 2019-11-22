@@ -1,7 +1,10 @@
 package core.day23;
 
-import java.net.*;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.InetAddress;
 
 class UdpSend2 {
     public static void main(String[] args) throws Exception {

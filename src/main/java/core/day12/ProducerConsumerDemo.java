@@ -22,10 +22,10 @@ public class ProducerConsumerDemo {
 
 /*
  * 对于多个生产者和消费者。 为什么要定义while判断标记。 原因：让被唤醒的线程再一次判断标记。
- * 
- * 
+ *
+ *
  * 为什么定义notifyAll， 因为需要唤醒对方线程。 因为只用notify，容易出现只唤醒本方线程的情况。导致程序中的所有线程都等待。
- * 
+ *
  */
 
 class Resource2 {

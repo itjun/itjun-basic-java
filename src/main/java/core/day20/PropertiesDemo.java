@@ -55,10 +55,10 @@ public class PropertiesDemo {
     // 演示，如何将流中的数据存储到集合中。
     // 想要将info.txt中键值数据存到集合中进行操作。
     /*
-	 * 1,用一个流和info.txt文件关联。 2，读取一行数据，将该行数据用"="进行切割。
-	 * 3，等号左边作为键，右边作为值。存入到Properties集合中即可。
-	 * 
-	 */
+     * 1,用一个流和info.txt文件关联。 2，读取一行数据，将该行数据用"="进行切割。
+     * 3，等号左边作为键，右边作为值。存入到Properties集合中即可。
+     *
+     */
     public static void method_1() throws IOException {
         BufferedReader bufr = new BufferedReader(new FileReader("info.txt"));
 

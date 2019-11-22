@@ -80,10 +80,10 @@ public class DuoTaiDemo {
         // d.eat();
         // Cat c = new Cat();
         /*
-		 * Cat c1 = new Cat(); function(c1);
-		 * 
-		 * function(new Dog()); function(new Pig());
-		 */
+         * Cat c1 = new Cat(); function(c1);
+         *
+         * function(new Dog()); function(new Pig());
+         */
 
         // Animal c = new Cat();
         // c.eat();
@@ -99,11 +99,11 @@ public class DuoTaiDemo {
         a.eat();
         // a.catchMouse();
     }
-	/*
-	 * public static void function(Cat c)// { c.eat(); } public static void
-	 * function(Dog d) { d.eat(); }
-	 * 
-	 * public static void function(Pig p) { p.eat(); }
-	 */
+    /*
+     * public static void function(Cat c)// { c.eat(); } public static void
+     * function(Dog d) { d.eat(); }
+     *
+     * public static void function(Pig p) { p.eat(); }
+     */
 
 }

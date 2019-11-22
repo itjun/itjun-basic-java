@@ -62,11 +62,11 @@ public class CollectionDemo {
         al.add("java03");
         al.add("java04");
 
-		/*
+        /*
          * Iterator it = al.iterator();//获取迭代器，用于取出集合中的元素。
-		 * 
-		 * while(it.hasNext()) { sop(it.next()); }
-		 */
+         *
+         * while(it.hasNext()) { sop(it.next()); }
+         */
 
         for (Iterator it = al.iterator(); it.hasNext(); ) {
             sop(it.next());

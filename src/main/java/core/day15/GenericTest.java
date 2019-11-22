@@ -6,18 +6,18 @@ import java.util.Iterator;
 public class GenericTest {
     public static void main(String[] args) {
         /*
-		 * ArrayList al = new ArrayList(); al.add(new Person("heihei"));
-		 * 
-		 * ArrayList al1 = new ArrayList();
-		 * 
-		 * al1.add("haha1"); al1.add("haha2");
-		 * 
-		 * al.addAll(al1);
-		 * 
-		 * System.out.println(al);int.next().getName();
-		 */
+         * ArrayList al = new ArrayList(); al.add(new Person("heihei"));
+         *
+         * ArrayList al1 = new ArrayList();
+         *
+         * al1.add("haha1"); al1.add("haha2");
+         *
+         * al.addAll(al1);
+         *
+         * System.out.println(al);int.next().getName();
+         */
 
-		/**/
+        /**/
 
         ArrayList<Person> al = new ArrayList<Person>();
         al.add(new Person("ahah"));

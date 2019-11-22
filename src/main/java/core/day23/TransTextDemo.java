@@ -25,8 +25,11 @@ package core.day23;
 
 */
 
-import java.io.*;
-import java.net.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.net.ServerSocket;
+import java.net.Socket;
 
 class TransClient {
     public static void main(String[] args) throws Exception {
@@ -65,11 +68,11 @@ class TransClient {
     }
 }
 /*
- * 
+ *
  * 服务端： 源：socket读取流。 目的：socket输出流。 都是文本，装饰。
- * 
- * 
- * 
+ *
+ *
+ *
  */
 
 class TransServer {
@@ -108,6 +111,6 @@ class TransServer {
 /*
  * 该例子出现的问题。 现象：客户端和服务端都在莫名的等待。 为什么呢？ 因为客户端和服务端都有阻塞式方法。这些方法么没有读到结束标记。那么就一直等
  * 而导致两端，都在等待。
- * 
- * 
+ *
+ *
  */

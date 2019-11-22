@@ -29,8 +29,7 @@ package core.day11;
     实现Runnable，线程代码存在接口的子类的run方法。
 */
 
-class Ticket2 implements Runnable
-{
+class Ticket2 implements Runnable {
     private int tick = 100;
 
     @Override
@@ -55,12 +54,12 @@ public class TicketDemo {
         t3.start();
         t4.start();
 
-		/*
+        /*
          * Ticket t1 = new Ticket(); //Ticket t2 = new Ticket(); //Ticket t3 = new
-		 * Ticket(); //Ticket t4 = new Ticket();
-		 * 
-		 * t1.start(); t1.start(); t1.start(); t1.start();
-		 */
+         * Ticket(); //Ticket t4 = new Ticket();
+         *
+         * t1.start(); t1.start(); t1.start(); t1.start();
+         */
 
     }
 }

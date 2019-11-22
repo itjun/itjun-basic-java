@@ -37,8 +37,8 @@ public class StringTest {
 
     // 练习二：将字符串反转。
     /*
-	 * 思路： 1，将字符串变成数组。 2，对数组反转。 3，将数组变成字符串。
-	 */
+     * 思路： 1，将字符串变成数组。 2，对数组反转。 3，将数组变成字符串。
+     */
 
     public static String reverseString(String s, int start, int end) {
         // 字符串变数组。

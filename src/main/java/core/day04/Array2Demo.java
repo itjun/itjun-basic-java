@@ -9,15 +9,15 @@ public class Array2Demo {
 
         // System.out.println(arr[0][1]);
 
-		/*
+        /*
          * int[][] arr = new int[3][];
-		 * 
-		 * arr[0] = new int[3]; arr[1] = new int[1]; arr[2] = new int[2];
-		 * 
-		 * 
-		 * System.out.println(arr.length);//打印是二维数组的长度 3；
-		 * System.out.println(arr[0].length);//打印二维数组中第一个一维数组长度
-		 */
+         *
+         * arr[0] = new int[3]; arr[1] = new int[1]; arr[2] = new int[2];
+         *
+         *
+         * System.out.println(arr.length);//打印是二维数组的长度 3；
+         * System.out.println(arr[0].length);//打印二维数组中第一个一维数组长度
+         */
 
         int[][] arr = {{3, 5, 1, 7}, {2, 3, 5, 8}, {6, 1, 8, 2}};
 
@@ -33,19 +33,19 @@ public class Array2Demo {
 }
 /*
  * int[] x; int x[]; int[][] y; int y[][]; int[] y[];
- * 
- * 
+ *
+ *
  * int[] x,y[];//x一维，y二维。 int[] x; int[] y[];
- * 
+ *
  * a. x[0] = y;//error
- * 
+ *
  * b. y[0] = x;//yes
- * 
+ *
  * c. y[0][0] = x;//error
- * 
+ *
  * d. x[0][0] = y;//error
- * 
+ *
  * e. y[0][0] = x[0];//yes
- * 
+ *
  * f. x=y;//error
  */

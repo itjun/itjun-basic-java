@@ -23,13 +23,13 @@ public class ArrayListTest {
         al.add("java01");
         // al.add("java03");
 
-		/*
+        /*
          * 在迭代时循环中next调用一次，就要hasNext判断一次。 Iterator it = al.iterator();
-		 * 
-		 * while(it.hasNext()) { sop(it.next()+"...."+it.next()); }
-		 */
+         *
+         * while(it.hasNext()) { sop(it.next()+"...."+it.next()); }
+         */
 
-		/**/
+        /**/
         sop(al);
 
         al = singleElement(al);

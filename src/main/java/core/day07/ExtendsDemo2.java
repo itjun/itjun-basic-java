@@ -19,7 +19,7 @@ super代表的是父类对象的引用。
 
 class Father {
     private int num = 4;
-    
+
     public int getNum() {
         return this.num;
     }

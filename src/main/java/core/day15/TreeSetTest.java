@@ -39,9 +39,9 @@ class StrLenComparator implements Comparator {
         String s1 = (String) o1;
         String s2 = (String) o2;
 
-		/*
+        /*
          * if(s1.length()>s2.length()) return 1; if(s1.length()==s2.length()) return 0;
-		 */
+         */
 
         int num = new Integer(s1.length()).compareTo(new Integer(s2.length()));
         if (num == 0)

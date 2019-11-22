@@ -2,7 +2,6 @@ package json.gson;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import json.jpush.JPushRecord;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -11,6 +11,7 @@ import java.util.Map;
  * Created by 10914 on 2017/4/23.
  */
 public class WeChatPushGson {
+
     public static void main(String[] args) {
         WeChatRecord wechat = new WeChatRecord("openid", "userid");
         wechat.setUrl("FrmMessages.show");
@@ -43,4 +44,5 @@ public class WeChatPushGson {
             System.out.println("value " + map.get(key).getValue());
         }
     }
+
 }

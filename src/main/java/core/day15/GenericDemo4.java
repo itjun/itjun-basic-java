@@ -52,16 +52,16 @@ public class GenericDemo4 {
 
         Demo.method("hahahahha");
 
-		/*
+        /*
          * Demo d = new Demo(); d.show("haha"); d.show(new Integer(4));
-		 * d.print("heihei");
-		 */
-		/*
-		 * Demo<Integer> d = new Demo<Integer>();
-		 * 
-		 * d.show(new Integer(4)); d.print("hah");
-		 * 
-		 * Demo<String> d1 = new Demo<String>(); d1.print("haha"); d1.show(5);
-		 */
+         * d.print("heihei");
+         */
+        /*
+         * Demo<Integer> d = new Demo<Integer>();
+         *
+         * d.show(new Integer(4)); d.print("hah");
+         *
+         * Demo<String> d1 = new Demo<String>(); d1.print("haha"); d1.show(5);
+         */
     }
 }

@@ -187,11 +187,11 @@ public class StringMethodDemo {
         // method_is();
         // method_get();
         /*
-		 * String s1 = "abc"; String s2 = new String("abc");
-		 * 
-		 * String s3 = "abc"; System.out.println(s1==s2); System.out.println(s1==s3);
-		 * 
-		 */
+         * String s1 = "abc"; String s2 = new String("abc");
+         *
+         * String s3 = "abc"; System.out.println(s1==s2); System.out.println(s1==s3);
+         *
+         */
     }
 
     public static void sop(Object obj) {

@@ -22,11 +22,11 @@ public class Student extends AbstractStudent {
 
     @Override
     void study() {
-    System.out.println("Student is studying ...");
+        System.out.println("Student is studying ...");
     }
 
     @Override
     void sleep() {
-    System.out.println("Student is sleepping ..");
+        System.out.println("Student is sleepping ..");
     }
 }

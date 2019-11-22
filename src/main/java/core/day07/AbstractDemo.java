@@ -42,13 +42,13 @@ static：如果static可以修饰抽象方法，那么连对象都省了，直�
 */
 
 /*
- * 
+ *
  * class ChongCiStudent extends AbstractStudent { void study() {
  * System.out.println("chongci study"); } }
- * 
+ *
  * class BaseStudent extends AbstractStudent { void study() {
  * System.out.println("base study"); } }
- * 
+ *
  * class AdvStudent extends AbstractStudent { void study() {
  * System.out.println("adv study"); } }
  */

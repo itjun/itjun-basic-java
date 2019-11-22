@@ -3,10 +3,10 @@ package core.day18;
 public class MathDemo {
     public static void main(String[] args) {
 
-		/*
+        /*
          * Random r = new Random(); for(int x=0; x<10; x++) { //int d =
-		 * (int)(Math.random()*10+1); int d = r.nextInt(10)+1; sop(d); }
-		 */
+         * (int)(Math.random()*10+1); int d = r.nextInt(10)+1; sop(d); }
+         */
         saveTwo(12.3456, 3, true);// 12.34
     }
 
@@ -18,11 +18,11 @@ public class MathDemo {
 
         sop("num=" + num);
 
-		/*
-		 * double d1 = d*100; sop("d1="+d1); d1 = d1+0.5; double d2 = (int)d1;
-		 * sop("d2="+d2); double d3 = d2/100; sop("d3="+d3);
-		 * 
-		 */
+        /*
+         * double d1 = d*100; sop("d1="+d1); d1 = d1+0.5; double d2 = (int)d1;
+         * sop("d2="+d2); double d3 = d2/100; sop("d3="+d3);
+         *
+         */
     }
 
     public static void show() {

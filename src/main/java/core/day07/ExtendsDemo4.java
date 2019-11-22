@@ -64,7 +64,7 @@ public class ExtendsDemo4 {
 
 /*
  * class Person { private String name; Person(String name) { this.name = name; }
- * 
+ *
  * void show(){} } class AbstractStudent extends Person { AbstractStudent(String name) {
  * super(name); } void method() { super.show(); } }
  */

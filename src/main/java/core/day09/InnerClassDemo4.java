@@ -17,11 +17,11 @@ abstract class AbsDemo {
 class Outer4 {
     int x = 3;
 
-	/*
+    /*
      * class Inner extends AbsDemo { int num = 90; void show() {
-	 * System.out.println("show :"+num); } void abc() { System.out.println("hehe");
-	 * } }
-	 */
+     * System.out.println("show :"+num); } void abc() { System.out.println("hehe");
+     * } }
+     */
 
     public void function() {
         // AbsDemo a = new Inner();

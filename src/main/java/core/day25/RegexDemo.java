@@ -88,12 +88,12 @@ public class RegexDemo {
 
     }
 
-	/*
+    /*
      * 对QQ号码进行校验 要求：5~15 0不能开头，只能是数字
-	 * 
-	 * 这种方式，使用了String类中的方法，进行组合完成了需求。但是代码过于复杂。
-	 * 
-	 */
+     *
+     * 这种方式，使用了String类中的方法，进行组合完成了需求。但是代码过于复杂。
+     *
+     */
 
     public static void checkQQ_1() {
         String qq = "1882345a0";
@@ -110,12 +110,12 @@ public class RegexDemo {
                     System.out.println("出现非法字符.......");
                 }
 
-				/*
-				 * char[] arr = qq.toCharArray();//123a4 boolean flag = true; for(int
-				 * x=0;x<arr.length; x++) { if(!(arr[x]>='0' && arr[x]<='9')) { flag = false;
-				 * break; } } if(flag) { System.out.println("qq:"+qq); } else {
-				 * System.out.println("出现非法字符"); }
-				 */
+                /*
+                 * char[] arr = qq.toCharArray();//123a4 boolean flag = true; for(int
+                 * x=0;x<arr.length; x++) { if(!(arr[x]>='0' && arr[x]<='9')) { flag = false;
+                 * break; } } if(flag) { System.out.println("qq:"+qq); } else {
+                 * System.out.println("出现非法字符"); }
+                 */
             } else {
                 System.out.println("不可以0开头");
 

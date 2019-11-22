@@ -87,9 +87,9 @@ class MyCompare implements Comparator {
 
             return new Integer(s1.getAge()).compareTo(new Integer(s2.getAge()));
             /*
-			 * if(s1.getAge()>s2.getAge()) return 1; if(s1.getAge()==s2.getAge()) return 0;
-			 * return -1;
-			 */
+             * if(s1.getAge()>s2.getAge()) return 1; if(s1.getAge()==s2.getAge()) return 0;
+             * return -1;
+             */
         }
 
         return num;

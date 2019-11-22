@@ -54,16 +54,16 @@ public class DuoTaiDemo2 {
         // Animal a = new Animal();
         // Cat c = (Cat)a;
 
-		/*
+        /*
          * 毕姥爷 x = new 毕老师();
-		 * 
-		 * x.讲课();
-		 * 
-		 * 毕老师 y = (毕老师)x;
-		 * 
-		 * 
-		 * y.看电影();
-		 */
+         *
+         * x.讲课();
+         *
+         * 毕老师 y = (毕老师)x;
+         *
+         *
+         * y.看电影();
+         */
         function(new Dog());
         function(new Cat());
 
@@ -72,9 +72,9 @@ public class DuoTaiDemo2 {
     public static void function(Animal a)// Animal a = new Cat();
     {
         a.eat();
-		/*
-		 * if(a instanceof Animal) { System.out.println("haha"); } else
-		 */
+        /*
+         * if(a instanceof Animal) { System.out.println("haha"); } else
+         */
         if (a instanceof Cat) {
             Cat c = (Cat) a;
             c.catchMouse();
@@ -83,9 +83,9 @@ public class DuoTaiDemo2 {
             c.kanJia();
         }
 
-		/*
-		 * instanceof : 用于判断对象的类型。 对象 intanceof 类型(类类型 接口类型)
-		 */
+        /*
+         * instanceof : 用于判断对象的类型。 对象 intanceof 类型(类类型 接口类型)
+         */
 
     }
 

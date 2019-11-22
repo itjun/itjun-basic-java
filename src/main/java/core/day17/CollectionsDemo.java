@@ -143,8 +143,8 @@ class StrLenComparator2 implements Comparator<String> {
 }
 /*
  * class Student { } list.add(new Student());
- * 
+ *
  * public static <T extends Comparable<? super T>> void sort(List<T> list) {
- * 
+ *
  * }
  */

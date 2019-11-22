@@ -33,7 +33,6 @@ public class JPushRecord {
         System.out.println(json);
     }
 
-
     public String getPlatform() {
         return platform;
     }

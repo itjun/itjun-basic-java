@@ -75,8 +75,8 @@ public class RunCount {
 
 /*
  * name=zhangsan age=20
- * 
- * 
+ *
+ *
  * <persons> <person id="001"> <name>zhagnsan</name> <age>30</age>
  * <address>bj</address> </person> <person> <name </person> </persons>
  */

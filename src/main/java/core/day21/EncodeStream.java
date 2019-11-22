@@ -5,6 +5,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.nio.charset.StandardCharsets;
 
 public class EncodeStream {
     public static void main(String[] args) throws IOException {
@@ -26,7 +27,7 @@ public class EncodeStream {
     }
 
     public static void writeText() throws IOException {
-        OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream("utf.txt"), "UTF-8");
+        OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream("utf.txt"), StandardCharsets.UTF_8);
 
         osw.write("你好");
 

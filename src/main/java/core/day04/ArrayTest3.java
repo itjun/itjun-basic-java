@@ -20,8 +20,8 @@ public class ArrayTest3 {
     public static void reverseArray(int[] arr) {
         for (int start = 0, end = arr.length - 1; start < end; start++, end--) {
             /*
-			 * int temp = arr[start]; arr[start] = arr[end]; arr[end] = temp;
-			 */
+             * int temp = arr[start]; arr[start] = arr[end]; arr[end] = temp;
+             */
             swap(arr, start, end);
         }
     }

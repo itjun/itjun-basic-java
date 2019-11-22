@@ -23,8 +23,8 @@ public class ForTest3 {
         }
         System.out.println("count=" + count);
 
-		/*
+        /*
          * 计数器思想。 通过一个变量记录住数据的状态变化。 也许通过循环完成。
-		 */
+         */
     }
 }

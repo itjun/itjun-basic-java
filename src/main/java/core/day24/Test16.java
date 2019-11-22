@@ -14,20 +14,20 @@ import java.util.Arrays;
 public class Test16 {
     public static void main(String[] args) throws Exception {
         /*
-		 * BufferedReader bufr = new BufferedReader(new FileReader("a.txt"));
-		 * 
-		 * String line = bufr.readLine();
-		 * 
-		 * char[] arr = line.toCharArray();
-		 * 
-		 * Arrays.sort(arr);
-		 * 
-		 * BufferedWriter bufw = new BufferedWriter(new FileWriter("b.txt"));
-		 * 
-		 * bufw.write(arr);
-		 * 
-		 * bufw.close(); bufr.close();
-		 */
+         * BufferedReader bufr = new BufferedReader(new FileReader("a.txt"));
+         *
+         * String line = bufr.readLine();
+         *
+         * char[] arr = line.toCharArray();
+         *
+         * Arrays.sort(arr);
+         *
+         * BufferedWriter bufw = new BufferedWriter(new FileWriter("b.txt"));
+         *
+         * bufw.write(arr);
+         *
+         * bufw.close(); bufr.close();
+         */
 
         writeFile();
     }

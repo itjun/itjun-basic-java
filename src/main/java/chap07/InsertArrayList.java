@@ -27,7 +27,6 @@ public class InsertArrayList {
         log.info("ArrayList spend {} ms", (System.currentTimeMillis() - start));
     }
 
-
     private static void step2() {
         LinkedList<Integer> list3 = new LinkedList<>();
         long start = System.currentTimeMillis();

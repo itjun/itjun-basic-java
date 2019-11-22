@@ -8,7 +8,7 @@ interface Inter<T> {
 /*
  * class InterImpl implements Inter<String> { public void show(String t) {
  * System.out.println("show :"+t); } }
- * 
+ *
  */
 
 class InterImpl<T> implements Inter<T> {

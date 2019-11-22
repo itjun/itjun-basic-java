@@ -61,32 +61,32 @@ public class MapDemo3 {
     public static void main(String[] args) {
         demo();
 
-		/*
+        /*
          * HashMap<String,List<Student>> czbk = new HashMap<String,List<Student>>();
-		 * 
-		 * HashMap<String,String> yure = new HashMap<String,String>();
-		 * 
-		 * HashMap<String,String> jiuye = new HashMap<String,String>();
-		 * 
-		 * czbk.put("yureban",yure); czbk.put("jiuyeban",jiuye);
-		 * 
-		 * 
-		 * yure.put("01","zhagnsan"); yure.put("02","lisi");
-		 * 
-		 * jiuye.put("01","zhaoliu"); jiuye.put("02","wangwu");
-		 * 
-		 * 
-		 * 
-		 * //遍历czbk集合。获取所有的教室。 Iterator<String> it = czbk.keySet().iterator();
-		 * 
-		 * while(it.hasNext()) { String roomName = it.next(); HashMap<String,String>
-		 * room = czbk.get(roomName);
-		 * 
-		 * System.out.println(roomName); getStudentInfo(room); }
-		 * 
-		 * 
-		 * // getStudentInfo(jiuye); // getStudentInfo(yure);
-		 */
+         *
+         * HashMap<String,String> yure = new HashMap<String,String>();
+         *
+         * HashMap<String,String> jiuye = new HashMap<String,String>();
+         *
+         * czbk.put("yureban",yure); czbk.put("jiuyeban",jiuye);
+         *
+         *
+         * yure.put("01","zhagnsan"); yure.put("02","lisi");
+         *
+         * jiuye.put("01","zhaoliu"); jiuye.put("02","wangwu");
+         *
+         *
+         *
+         * //遍历czbk集合。获取所有的教室。 Iterator<String> it = czbk.keySet().iterator();
+         *
+         * while(it.hasNext()) { String roomName = it.next(); HashMap<String,String>
+         * room = czbk.get(roomName);
+         *
+         * System.out.println(roomName); getStudentInfo(room); }
+         *
+         *
+         * // getStudentInfo(jiuye); // getStudentInfo(yure);
+         */
 
     }
 

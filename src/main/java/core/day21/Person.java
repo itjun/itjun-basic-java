@@ -12,7 +12,7 @@ public class Person implements Serializable {
     Person(String name, int age, String country) {
         this.name = name;
         this.age = age;
-        this.country = country;
+        Person.country = country;
     }
 
     @Override

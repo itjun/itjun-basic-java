@@ -134,20 +134,20 @@ public class ArrayTool {
 /*
  * 一个类中默认会有一个空参数的构造函数， 这个默认的构造函数的权限和所属类一致。 如果类被public修饰，那么默认的构造函数也带public修饰符。
  * 如果类没有被public修饰，那么默认的构造函数，也没有public修饰。
- * 
+ *
  * 默认构造构造函数的权限是随着的类的变化而变化的。
- * 
- * 
+ *
+ *
  */
 
 /*
  * class Demo { public static void main(String[] args) { int[] arr = {3,4,1,8};
- * 
- * 
+ *
+ *
  * int max = getMax(arr); System.out.println("max="+max); } public static int
  * getMax(int[] arr) { int max = 0; for(int x=1; x<arr.length; x++) {
  * if(arr[x]>arr[max]) max = x; } return arr[max]; } }
- * 
+ *
  * class Test { public static int getMax(int[] arr) { int max = 0; for(int x=1;
  * x<arr.length; x++) { if(arr[x]>arr[max]) max = x; } return arr[max]; } }
  */

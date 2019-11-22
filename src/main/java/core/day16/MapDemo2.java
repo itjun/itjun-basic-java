@@ -49,33 +49,33 @@ public class MapDemo2 {
 
         }
 
-		/*
+        /*
          * //先获取map集合的所有键的Set集合,keySet(); Set<String> keySet = map.keySet();
-		 * 
-		 * //有了Set集合。就可以获取其迭代器。 Iterator<String> it = keySet.iterator();
-		 * 
-		 * while(it.hasNext()) { String key = it.next(); //有了键可以通过map集合的get方法获取其对应的值。
-		 * String value = map.get(key); System.out.println("key:"+key+",value:"+value);
-		 * }
-		 * 
-		 */
+         *
+         * //有了Set集合。就可以获取其迭代器。 Iterator<String> it = keySet.iterator();
+         *
+         * while(it.hasNext()) { String key = it.next(); //有了键可以通过map集合的get方法获取其对应的值。
+         * String value = map.get(key); System.out.println("key:"+key+",value:"+value);
+         * }
+         *
+         */
 
     }
 }
 
 /*
  * Map.Entry 其实Entry也是一个接口，它是Map接口中的一个内部接口。
- * 
- * 
- * 
- * 
+ *
+ *
+ *
+ *
  * interface Map { public static interface Entry { public abstract Object
  * getKey(); public abstract Object getValue();
- * 
+ *
  * } }
- * 
+ *
  * class HashMap implements Map { class Hahs implements Map.Entry { public
  * Object getKey(){} public Object getValue(){} }
- * 
+ *
  * }
  */

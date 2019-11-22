@@ -14,9 +14,9 @@ public class ArrayDemo3 {
 
         // int sum = 0;
         /*
-		 * for(int x=0; x<arr.length; x++) { //sum += arr[x];
-		 * System.out.println("arr["+x+"]="+arr[x]+";");//arr[0]=0; }
-		 */
+         * for(int x=0; x<arr.length; x++) { //sum += arr[x];
+         * System.out.println("arr["+x+"]="+arr[x]+";");//arr[0]=0; }
+         */
 
         // System.out.println(arr);
 

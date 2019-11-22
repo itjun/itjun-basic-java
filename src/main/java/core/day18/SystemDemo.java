@@ -35,11 +35,11 @@ public class SystemDemo {
 
         System.out.println("v=" + v);
 
-		/*
+        /*
          * //获取所有属性信息。 for(Object obj : prop.keySet()) { String value =
-		 * (String)prop.get(obj);
-		 * 
-		 * System.out.println(obj+"::"+value); }
-		 */
+         * (String)prop.get(obj);
+         *
+         * System.out.println(obj+"::"+value); }
+         */
     }
 }

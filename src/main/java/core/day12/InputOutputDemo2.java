@@ -78,10 +78,10 @@ public class InputOutputDemo2 {
         new Thread(new Output2(r)).start();
         /*
          * Input in = new Input(r); Output out = new Output(r);
-		 * 
-		 * Thread t1 = new Thread(in); Thread t2 = new Thread(out);
-		 * 
-		 * t1.start(); t2.start();
-		 */
+         *
+         * Thread t1 = new Thread(in); Thread t2 = new Thread(out);
+         *
+         * t1.start(); t2.start();
+         */
     }
 }

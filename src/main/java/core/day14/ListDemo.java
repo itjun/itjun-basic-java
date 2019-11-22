@@ -132,21 +132,21 @@ public class ListDemo {
 
         sop(al);
 
-		/*
+        /*
          * //在迭代过程中，准备添加或者删除元素。
-		 * 
-		 * Iterator it = al.iterator();
-		 * 
-		 * while(it.hasNext()) { Object obj = it.next();
-		 * 
-		 * if(obj.equals("java02")) //al.add("java008");
-		 * it.remove();//将java02的引用从集合中删除了。
-		 * 
-		 * sop("obj="+obj);
-		 * 
-		 * 
-		 * } sop(al);
-		 */
+         *
+         * Iterator it = al.iterator();
+         *
+         * while(it.hasNext()) { Object obj = it.next();
+         *
+         * if(obj.equals("java02")) //al.add("java008");
+         * it.remove();//将java02的引用从集合中删除了。
+         *
+         * sop("obj="+obj);
+         *
+         *
+         * } sop(al);
+         */
 
     }
 }

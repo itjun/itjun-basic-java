@@ -23,8 +23,8 @@ public class FileDemo2 {
 
                 // /System.out.println("dir:"+dir+"....name::"+name);
                 /*
-				 * if(name.endsWith(".bmp")) return true; else return false;
-				 */
+                 * if(name.endsWith(".bmp")) return true; else return false;
+                 */
                 return name.endsWith(".bmp");
 
             }

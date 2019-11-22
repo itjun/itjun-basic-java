@@ -1,8 +1,6 @@
 package core.day22;
 
-import java.awt.Button;
-import java.awt.FlowLayout;
-import java.awt.Frame;
+import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
@@ -72,19 +70,19 @@ public class AwtDemo {
     }
 }
 /*
- * 
+ *
  * class MyWin implements WindowListener { //覆盖7个方法。可以我只用到了关闭的动作。
  * //其他动作都没有用到，可是却必须复写。
- * 
+ *
  * }
- * 
- * 
- * 
+ *
+ *
+ *
  * //因为WindowListener的子类WindowAdapter已经实现了WindowListener接口。
  * //并覆盖了其中的所有方法。那么我只要继承自Windowadapter覆盖我需要的方法即可。 class MyWin extends
  * WindowAdapter { public void windowClosing(WindowEvent e) {
  * //System.out.println("window closing---"+e.toString()); System.exit(0); } }
- * 
+ *
  */
 
 // 练习，定义一个窗体，在窗体中添加一个按钮具备关闭该窗体的功能。

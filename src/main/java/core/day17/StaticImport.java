@@ -2,27 +2,28 @@ package core.day17;
 
 //导入了System类中所有静态成员。
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 import static java.lang.System.out;
-//导入的是Arrays这个类中的所有静态成员。
 import static java.util.Arrays.binarySearch;
 import static java.util.Arrays.sort;
+import static java.util.Collections.sort;
+
+//导入的是Arrays这个类中的所有静态成员。
 /*
-packa/Demo.class 
+packa/Demo.class
 packb/Demo.class
 
 import packa.*;
 import packb.*;
 */
-import static java.util.Collections.sort;
-
 /*
 StaticImport  静态导入。
 
 当类名重名时，需要指定具体的包名。
 当方法重名是，指定具备所属的对象或者类。
 */
-import java.util.ArrayList;
-import java.util.Arrays;
 
 public class StaticImport // extends Object
 {

@@ -2,6 +2,8 @@ package core.day24;
 
 import java.io.InputStream;
 import java.io.PrintWriter;
+import java.net.ServerSocket;
+import java.net.Socket;
 
 /*
 演示客户端和服务端。
@@ -21,8 +23,6 @@ import java.io.PrintWriter;
 
 
 */
-import java.net.ServerSocket;
-import java.net.Socket;
 
 public class ServerDemo {
     public static void main(String[] args) throws Exception {

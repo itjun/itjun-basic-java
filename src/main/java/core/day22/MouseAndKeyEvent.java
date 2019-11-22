@@ -1,9 +1,6 @@
 package core.day22;
 
-import java.awt.Button;
-import java.awt.FlowLayout;
-import java.awt.Frame;
-import java.awt.TextField;
+import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
@@ -73,17 +70,17 @@ public class MouseAndKeyEvent {
             }
         });
 
-		/*
+        /*
          * but.addActionListener(new ActionListener() { public void
-		 * actionPerformed(ActionEvent e) { System.out.println("action ok"); } });
-		 */
+         * actionPerformed(ActionEvent e) { System.out.println("action ok"); } });
+         */
 
-		/*
-		 *
-		 * but.addMouseListener(new MouseAdapter() { private int count = 1; private int
-		 * clickCount = 1; public void mouseEntered(MouseEvent e) {
-		 * System.out.println("鼠标进入到该组件"+count++); } public void mouseClicked(MouseEvent
-		 * e) { if(e.getClickCount()==2) System.out.println("双击动作"+clickCount++); } });
-		 */
+        /*
+         *
+         * but.addMouseListener(new MouseAdapter() { private int count = 1; private int
+         * clickCount = 1; public void mouseEntered(MouseEvent e) {
+         * System.out.println("鼠标进入到该组件"+count++); } public void mouseClicked(MouseEvent
+         * e) { if(e.getClickCount()==2) System.out.println("双击动作"+clickCount++); } });
+         */
     }
 }

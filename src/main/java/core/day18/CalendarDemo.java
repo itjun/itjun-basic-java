@@ -21,16 +21,16 @@ public class CalendarDemo {
         // sop("星期"+c.get(Calendar.DAY_OF_WEEK));
         sop(weeks[index1]);
 
-		/*
+        /*
          * Date d = new Date();
-		 * 
-		 * SimpleDateFormat sdf = new SimpleDateFormat("yyyy");
-		 * 
-		 * String year = sdf.format(d);
-		 * 
-		 * System.out.println(year);
-		 * 
-		 */
+         *
+         * SimpleDateFormat sdf = new SimpleDateFormat("yyyy");
+         *
+         * String year = sdf.format(d);
+         *
+         * System.out.println(year);
+         *
+         */
     }
 
     public static void sop(Object obj) {

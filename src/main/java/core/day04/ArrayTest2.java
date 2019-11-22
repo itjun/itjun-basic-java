@@ -15,25 +15,25 @@ public class ArrayTest2 {
             for (int y = x + 1; y < arr.length; y++) {
                 if (arr[x] > arr[y]) {
                     /*
-					 * int temp = arr[x]; arr[x] = arr[y]; arr[y]= temp;
-					 */
+                     * int temp = arr[x]; arr[x] = arr[y]; arr[y]= temp;
+                     */
                     swap(arr, x, y);
                 }
             }
         }
     }
-	/*
-	 * 冒泡排序
-	 */
+    /*
+     * 冒泡排序
+     */
 
     public static void bubbleSort(int[] arr) {
         for (int x = 0; x < arr.length - 1; x++) {
             for (int y = 0; y < arr.length - x - 1; y++)// -x:让每一次比较的元素减少，-1：避免角标越界。
             {
                 if (arr[y] < arr[y + 1]) {
-					/*
-					 * int temp = arr[y]; arr[y] = arr[y+1]; arr[y+1] = temp;
-					 */
+                    /*
+                     * int temp = arr[y]; arr[y] = arr[y+1]; arr[y+1] = temp;
+                     */
                     swap(arr, y, y + 1);
                 }
             }

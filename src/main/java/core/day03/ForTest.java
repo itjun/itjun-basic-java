@@ -13,9 +13,9 @@ public class ForTest {
 
         }
         /*
-		 * 无限循环的最简单表现形式。 for(;;){}
-		 * 
-		 * while(true){}
-		 */
+         * 无限循环的最简单表现形式。 for(;;){}
+         *
+         * while(true){}
+         */
     }
 }

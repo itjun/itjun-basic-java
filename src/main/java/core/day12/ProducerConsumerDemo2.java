@@ -27,9 +27,9 @@ public class ProducerConsumerDemo2 {
 /*
  * JDK1.5 中提供了多线程升级解决方案。 将同步Synchronized替换成现实Lock操作。 将Object中的wait，notify
  * notifyAll，替换了Condition对象。 该对象可以Lock锁 进行获取。 该示例中，实现了本方只唤醒对方操作。
- * 
+ *
  * Lock:替代了Synchronized lock unlock newCondition()
- * 
+ *
  * Condition：替代了Object wait notify notifyAll await(); signal(); signalAll();
  */
 class Resource {
