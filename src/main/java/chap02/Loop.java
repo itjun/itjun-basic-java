@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class Loop {
+
     public static void main(String[] args) {
         System.out.println(whileText(1000, 200, 0.5));
         // doWhileText(5000, 0.5);
