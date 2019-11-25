@@ -15,7 +15,7 @@ public class MathUtils {
     }
 
     /**
-     * @param len
+     * @param len 数据长度
      * @return 指定长度的随机数
      */
     public static String getRandom(int len) {

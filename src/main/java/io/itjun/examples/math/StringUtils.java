@@ -1,9 +1,33 @@
 package io.itjun.examples.math;
 
+import java.util.Random;
+
 /**
  * 常用字符串工具
  */
 public class StringUtils {
+
+    /**
+     * @param length 数据长度
+     * @return 获取数字和字母的混合字符串
+     */
+    public static String getRandom(int length) {
+        String result = "";
+        Random random = new Random();
+
+        for (int i = 0; i < length; i++) {
+            String symbol = random.nextInt(2) % 2 == 0 ? "char" : "num";
+
+            if ("char".equalsIgnoreCase(symbol)) {
+                // 随机获取大小写字母
+                int letterIndex = random.nextInt(2) % 2 == 0 ? 65 : 97;
+                result += (char) (random.nextInt(26) + letterIndex);
+            } else if ("num".equalsIgnoreCase(symbol)) {
+                result += String.valueOf(random.nextInt(10));
+            }
+        }
+        return result;
+    }
 
     /**
      * <pre>
