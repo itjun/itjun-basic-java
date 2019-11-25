@@ -1,4 +1,4 @@
-package io.itjun.examples.json.gson;
+package io.itjun.examples.json.gson.serialization;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
