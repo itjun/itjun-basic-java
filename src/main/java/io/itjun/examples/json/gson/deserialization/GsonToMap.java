@@ -9,9 +9,7 @@ import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * json 反序列化成Map
- */
+
 @Slf4j
 public class GsonToMap {
 
