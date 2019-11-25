@@ -1,6 +1,6 @@
-package io.itjun.examples;
+package io.itjun.examples.config;
 
-public class Config {
+public class AppConfig {
 
     public static final String Split_Line = "------分割线------";
 }

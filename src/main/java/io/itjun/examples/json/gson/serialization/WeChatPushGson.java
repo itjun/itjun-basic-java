@@ -2,7 +2,7 @@ package io.itjun.examples.json.gson.serialization;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import io.itjun.examples.Config;
+import io.itjun.examples.config.AppConfig;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Map;
@@ -28,14 +28,14 @@ public class WeChatPushGson {
         String json = gson.toJson(obj);
         log.info("{}", json);
 
-        log.info(Config.Split_Line);
+        log.info(AppConfig.Split_Line);
 
         WeChatRecord item = gson.fromJson(json, WeChatRecord.class);
         log.info("目标用户 {}", item.getTouser());
         log.info("模板编号 {}", item.getTemplate_id());
         log.info("详情地址 {}", item.getUrl());
 
-        log.info(Config.Split_Line);
+        log.info(AppConfig.Split_Line);
         Map<String, Keynote> map = item.getData();
         item.getData().forEach((k, v) -> {
             log.info("{}-> {} {}", k, v.getColor(), v.getValue());

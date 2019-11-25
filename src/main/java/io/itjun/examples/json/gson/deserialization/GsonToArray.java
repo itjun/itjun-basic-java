@@ -3,7 +3,7 @@ package io.itjun.examples.json.gson.deserialization;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
-import io.itjun.examples.Config;
+import io.itjun.examples.config.AppConfig;
 import lombok.extern.slf4j.Slf4j;
 
 import java.lang.reflect.Type;
@@ -29,14 +29,14 @@ public class GsonToArray {
             log.info("{}", x);
         });
 
-        log.info(Config.Split_Line);
+        log.info(AppConfig.Split_Line);
         Type type = new TypeToken<List<String>>() {
         }.getType();
         List<String> results = gson.fromJson(json, type);
         results.forEach((item) -> {
             log.info("{}", item);
         });
-        log.info(Config.Split_Line);
+        log.info(AppConfig.Split_Line);
 
         // 数据类数据
         int[] ints = {1, 2, 3, 4, 5};
