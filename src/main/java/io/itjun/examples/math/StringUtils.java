@@ -34,7 +34,7 @@ public class StringUtils {
      * @return 判断字符串不为空
      */
     public static boolean isNotEmpty(String str) {
-        return !Utils.isEmpty(str);
+        return !StringUtils.isEmpty(str);
     }
 
     /**
