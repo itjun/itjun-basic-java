@@ -19,9 +19,11 @@ public class GsonToList {
         list.add("C");
         list.add("D");
         list.add("E");
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        // 格式化显示数据
+        // Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        Gson gson = new GsonBuilder().create();
         String json = gson.toJson(list);
-        log.info("原始数据 {}", json);
+        log.info("{}", json);
 
         Type type = new TypeToken<List<String>>() {
         }.getType();
