@@ -30,17 +30,20 @@ public class GsonToArray {
         });
 
         log.info(AppConfig.Split_Line);
+
         Type type = new TypeToken<List<String>>() {
         }.getType();
         List<String> results = gson.fromJson(json, type);
         results.forEach((item) -> {
             log.info("{}", item);
         });
+
         log.info(AppConfig.Split_Line);
 
         // 数据类数据
         int[] ints = {1, 2, 3, 4, 5};
         log.info(gson.toJson(ints));     // ==> [1,2,3,4,5]
+
         int[] ints2 = gson.fromJson("[1,2,3,4,5]", int[].class);
         Arrays.stream(ints2).forEach((x) -> {
             log.info("{}", x);
