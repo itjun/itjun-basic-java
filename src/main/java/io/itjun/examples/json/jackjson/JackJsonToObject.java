@@ -22,10 +22,10 @@ public class JackJsonToObject {
         log.info("{}", logistic.getReason());
 
         LogisticsInfo info = logistic.getResult();
-        info.getList().forEach((obj) -> {
-            log.info("{}", obj.getDatetime());
-            log.info("{}", obj.getRemark());
-            log.info("{}", obj.getZone());
+        info.getList().forEach((item) -> {
+            log.info("{}", item.getDatetime());
+            log.info("{}", item.getRemark());
+            log.info("{}", item.getZone());
         });
 
     }
