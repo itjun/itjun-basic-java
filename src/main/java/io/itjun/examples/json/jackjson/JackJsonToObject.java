@@ -16,6 +16,7 @@ public class JackJsonToObject {
         String json = "{\"resultcode\":\"200\",\"reason\":\"查询物流信息成功\",\"result\":{\"company\":\"EMS\",\"com\":\"ems\",\"no\":\"1186465887499\",\"status\":\"1\",\"list\":[{\"datetime\":\"2016-06-15 21:44:04\",\"remark\":\"离开郴州市 发往长沙市【郴州市】\",\"zone\":\"\"},{\"datetime\":\"2016-06-20 17:55:00\",\"remark\":\"投递并签收，签收人：单位收发章 *【毕节地区】\",\"zone\":\"\"}]},\"error_code\":0}";
         ObjectMapper mapper = new ObjectMapper();
 
+        // Logistics logistic = mapper.readValue(json,Logistics.class);
         Logistics logistic = mapper.readValue(json, new TypeReference<Logistics>() {
         });
         log.info("{}", logistic.getReason());
