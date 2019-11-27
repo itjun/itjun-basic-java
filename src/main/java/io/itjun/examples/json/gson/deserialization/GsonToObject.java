@@ -1,7 +1,11 @@
 package io.itjun.examples.json.gson.deserialization;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import io.itjun.examples.json.jackjson.Logistics;
+import io.itjun.examples.json.jackjson.LogisticsInfo;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
@@ -17,57 +21,18 @@ import java.util.Map;
 @Slf4j
 public class GsonToObject {
 
-    @Getter
-    @Setter
-    private String platform;
-
-    @Getter
-    @Setter
-    private String audience;
-
-    @Getter
-    @Setter
-    private String notification;
-
-    @Getter
-    private Map<String, String> items = new HashMap<>();
-
-    @Getter
-    private List<String> list = new ArrayList<>();
-
-    public void put(String key, String value) {
-        items.put(key, value);
-    }
-
-    public void add(String str) {
-        list.add(str);
-    }
-
     public static void main(String[] args) {
-        GsonToObject obj = new GsonToObject();
-        obj.setPlatform("all");
-        obj.setAudience("tag");
-        obj.setNotification("android");
-
-        obj.put("k1", "Apple");
-        obj.put("k2", "Google");
-        obj.put("k3", "Facebook");
-        obj.put("k4", "Tencent");
-
-        obj.add("华为");
-        obj.add("小米");
-        obj.add("魅族");
-        obj.add("一加");
-
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        String json = gson.toJson(obj);
-        log.info("{}", json);
+        String logisticJson = "{\"resultcode\":\"200\",\"reason\":\"查询物流信息成功\",\"result\":{\"company\":\"EMS\",\"com\":\"ems\",\"no\":\"1186465887499\",\"status\":\"1\",\"list\":[{\"datetime\":\"2016-06-15 21:44:04\",\"remark\":\"离开郴州市 发往长沙市【郴州市】\",\"zone\":\"\"},{\"datetime\":\"2016-06-20 17:55:00\",\"remark\":\"投递并签收，签收人：单位收发章 *【毕节地区】\",\"zone\":\"\"}]},\"error_code\":0}";
 
-        GsonToObject result = gson.fromJson(json, GsonToObject.class);
-        log.info("{}", result.getPlatform());
+        Logistics logistic = gson.fromJson(logisticJson, Logistics.class);
+        log.info("{}", logistic.getReason());
 
-        result.getList().forEach((x) -> {
-            log.info(x);
+        LogisticsInfo info = logistic.getResult();
+        info.getList().forEach((obj) -> {
+            log.info("{}", obj.getDatetime());
+            log.info("{}", obj.getRemark());
+            log.info("{}", obj.getZone());
         });
     }
 
