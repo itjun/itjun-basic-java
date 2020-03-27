@@ -1,7 +1,7 @@
 package io.itjun.examples.chap08.override;
 
 /**
- * Created by iCrazyTeam on 2016/5/5 0005.
+ * Created by itjun on 2016/5/5 0005.
  */
 public class Father {
     private String messge;

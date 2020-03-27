@@ -7,7 +7,7 @@ import java.lang.reflect.Method;
  * A invocation handler the prints out the method name and parameters, the
  * invokes the original method
  * <p>
- * Created by iCrazyTeam on 2016/6/28 0026.
+ * Created by itjun on 2016/6/28 0026.
  */
 class TraceHandler implements InvocationHandler {
 

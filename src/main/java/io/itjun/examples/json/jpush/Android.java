@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by iCrazyTeam on 2017/5/15.
+ * Created by itjun on 2017/5/15.
  */
 public class Android {
     private String alert;

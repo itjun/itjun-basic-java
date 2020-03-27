@@ -8,7 +8,7 @@ import java.util.Random;
 /**
  * This Program demonstrates the use of proxies.
  * <p>
- * Created by iCrazyTeam on 2016/6/28 0026.
+ * Created by itjun on 2016/6/28 0026.
  */
 public class ProxyTest {
     public static void main(String[] args) {

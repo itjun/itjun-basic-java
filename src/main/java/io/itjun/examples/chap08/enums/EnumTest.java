@@ -3,7 +3,7 @@ package io.itjun.examples.chap08.enums;
 import java.util.Scanner;
 
 /**
- * Created by iCrazyTeam on 16/6/20.
+ * Created by itjun on 16/6/20.
  */
 public class EnumTest {
     public static void main(String[] args) {

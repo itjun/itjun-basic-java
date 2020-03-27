@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * Created by iCrazyTeam on 2017/4/25.
+ * Created by itjun on 2017/4/25.
  */
 public class QueenDemo {
     public static void main(String[] args) {

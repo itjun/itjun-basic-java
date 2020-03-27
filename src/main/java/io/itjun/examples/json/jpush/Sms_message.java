@@ -1,7 +1,7 @@
 package io.itjun.examples.json.jpush;
 
 /**
- * Created by iCrazyTeam on 2017/5/15.
+ * Created by itjun on 2017/5/15.
  */
 public class Sms_message {
     private String content;

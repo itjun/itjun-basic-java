@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by iCrazyTeam on 2017/5/13.
+ * Created by itjun on 2017/5/13.
  */
 public class JPushRecord {
     private String platform;

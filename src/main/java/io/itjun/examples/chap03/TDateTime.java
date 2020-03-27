@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by iCrazyTeam on 2016/4/17 0017.
+ * Created by itjun on 2016/4/17 0017.
  */
 public class TDateTime implements Serializable, Comparable<TDateTime>, Cloneable {
 

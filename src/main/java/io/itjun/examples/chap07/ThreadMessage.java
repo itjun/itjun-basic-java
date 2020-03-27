@@ -1,7 +1,7 @@
 package io.itjun.examples.chap07;
 
 /**
- * Created by iCrazyTeam on 16/5/26.
+ * Created by itjun on 16/5/26.
  */
 public class ThreadMessage implements Runnable {
     @Override

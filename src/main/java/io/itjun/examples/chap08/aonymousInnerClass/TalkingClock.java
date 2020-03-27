@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 import java.util.Date;
 
 /**
- * Created by iCrazyTeam on 2016/6/26 0026.
+ * Created by itjun on 2016/6/26 0026.
  */
 public class TalkingClock {
     /**

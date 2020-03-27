@@ -5,7 +5,7 @@ import javax.swing.*;
 /**
  * This Program demonstrates anonymous inner class
  * <p>
- * Created by iCrazyTeam on 2016/6/26 0026.
+ * Created by itjun on 2016/6/26 0026.
  */
 public class TalkingClockTest {
     public static void main(String[] args) {

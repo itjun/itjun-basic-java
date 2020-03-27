@@ -9,7 +9,7 @@ import java.util.Date;
 /**
  * A clock that prints the regular intervals.
  * <p>
- * Created by iCrazyTeam on 16/6/24.
+ * Created by itjun on 16/6/24.
  */
 public class TalkingClock {
     private int interval;

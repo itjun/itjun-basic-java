@@ -1,7 +1,7 @@
 package io.itjun.examples.chap04;
 
 /**
- * Created by iCrazyTeam on 16/4/15.
+ * Created by itjun on 16/4/15.
  */
 public class CompoundInterest {
 

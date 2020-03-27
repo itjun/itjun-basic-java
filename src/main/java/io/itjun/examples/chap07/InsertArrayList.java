@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 /**
- * Created by iCrazyTeam on 2017/1/17.
+ * Created by itjun on 2017/1/17.
  */
 public class InsertArrayList {
     private static final Logger log = LoggerFactory.getLogger(InsertArrayList.class);

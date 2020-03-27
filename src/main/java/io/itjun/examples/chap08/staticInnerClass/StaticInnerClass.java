@@ -3,7 +3,7 @@ package io.itjun.examples.chap08.staticInnerClass;
 /**
  * The program demonstrates the use of static inner class
  * <p>
- * Created by iCrazyTeam on 16/6/27.
+ * Created by itjun on 16/6/27.
  */
 public class StaticInnerClass {
     public static void main(String[] args) {

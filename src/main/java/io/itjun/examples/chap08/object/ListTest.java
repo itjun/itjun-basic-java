@@ -3,7 +3,7 @@ package io.itjun.examples.chap08.object;
 import java.util.ArrayList;
 
 /**
- * Created by iCrazyTeam on 16/6/7.
+ * Created by itjun on 16/6/7.
  */
 public class ListTest {
     public static void main(String[] args) {

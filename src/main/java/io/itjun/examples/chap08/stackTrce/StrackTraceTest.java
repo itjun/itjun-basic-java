@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * A program that displays a trace feature of a recursive method call
  * <p>
- * Created by iCrazyTeam on 2016/7/1 0026
+ * Created by itjun on 2016/7/1 0026
  */
 public class StrackTraceTest {
 

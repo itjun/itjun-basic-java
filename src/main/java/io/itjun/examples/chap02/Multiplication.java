@@ -1,7 +1,7 @@
 package io.itjun.examples.chap02;
 
 /**
- * Created by iCrazyTeam on 2017/04/03 0005.
+ * Created by itjun on 2017/04/03 0005.
  */
 public class Multiplication {
     public static void main(String[] args) {

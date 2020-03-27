@@ -1,7 +1,7 @@
 package io.itjun.examples.chap08.override;
 
 /**
- * Created by iCrazyTeam on 2016/6/1 0001.
+ * Created by itjun on 2016/6/1 0001.
  */
 public class Son extends Father {
     private String overright;

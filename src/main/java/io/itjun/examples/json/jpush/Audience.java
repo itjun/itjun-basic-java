@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by iCrazyTeam on 2017/5/15.
+ * Created by itjun on 2017/5/15.
  */
 public class Audience {
     private List<String> tag = new ArrayList<>();

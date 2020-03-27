@@ -5,7 +5,7 @@ import javax.swing.*;
 /**
  * This program demonstrates the use of inner class.
  * <p>
- * Created by iCrazyTeam on 16/6/24.
+ * Created by itjun on 16/6/24.
  */
 public class TalkingClockTest {
     public static void main(String[] args) {
