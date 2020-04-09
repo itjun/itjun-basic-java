@@ -2,8 +2,6 @@ package io.itjun.examples.json.gson.deserialization;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import io.itjun.examples.json.jackjson.Logistics;
-import io.itjun.examples.json.jackjson.LogisticsInfo;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;

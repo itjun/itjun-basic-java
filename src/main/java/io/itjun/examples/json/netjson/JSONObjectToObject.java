@@ -1,10 +1,8 @@
 package io.itjun.examples.json.netjson;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import io.itjun.examples.json.jackjson.Logistics;
-import io.itjun.examples.json.jackjson.LogisticsInfo;
-import io.itjun.examples.json.jackjson.LogisticsTrace;
+import io.itjun.examples.json.jackson.Logistics;
+import io.itjun.examples.json.jackson.LogisticsInfo;
+import io.itjun.examples.json.jackson.LogisticsTrace;
 import lombok.extern.slf4j.Slf4j;
 import net.sf.json.JSONObject;
 

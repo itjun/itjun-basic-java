@@ -1,4 +1,4 @@
-package io.itjun.examples.json.jackjson;
+package io.itjun.examples.json.jackson;
 
 import lombok.Getter;
 import lombok.Setter;

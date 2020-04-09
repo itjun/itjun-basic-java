@@ -4,16 +4,9 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import io.itjun.examples.json.jackjson.Logistics;
-import io.itjun.examples.json.jackjson.LogisticsInfo;
-import lombok.Getter;
-import lombok.Setter;
+import io.itjun.examples.json.jackson.Logistics;
+import io.itjun.examples.json.jackson.LogisticsInfo;
 import lombok.extern.slf4j.Slf4j;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 /**
  * 混合数据对象序列化和解析
