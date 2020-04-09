@@ -32,8 +32,7 @@ public class JackJsonToObject {
 
     private static void objToJson() throws ParseException, JsonProcessingException {
         SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
-        ActorJackson rudyYoungblood = new ActorJackson("nm2199632", sdf.parse("21-09-1982"),
-                Arrays.asList("Apocalypto", "Beatdown", "Wind Walkers"));
+        ActorJackson rudyYoungblood = new ActorJackson("nm2199632", sdf.parse("21-09-1982"), Arrays.asList("Apocalypto", "Beatdown", "Wind Walkers"));
         Movie movie = new Movie("tt0472043", "Mel Gibson", Arrays.asList(rudyYoungblood));
         ObjectMapper mapper = new ObjectMapper();
         String jsonResult = mapper.writeValueAsString(movie);
