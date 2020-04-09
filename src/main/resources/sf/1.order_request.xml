@@ -1,0 +1,30 @@
+<Request service="OrderService" lang="zh-CN">
+    <Head>HRZXKJ</Head>
+    <Body>
+        <Order
+                orderid="SFKD-20160219000019"
+                j_company="深圳宝龙达信息技术股份有限公司"
+                j_contact="邓丽君"
+                j_tel="15323233432"
+                j_mobile="15322234342"
+                j_province="广东省"
+                j_city="深圳市"
+                j_county="南山区"
+                j_address="广东省深圳市南山区西丽镇塘朗同富裕工业城7栋"
+                d_contact="四海" d_tel="15023434543"
+                d_mobile="15423456545"
+                d_province="广东省"
+                d_city="深圳市"
+                d_county="南山区"
+                d_address="科技园软件产业基地"
+                express_type="1"
+                pay_method="1"
+                custid="7551234567"
+                parcel_quantity="1"
+                is_docall="0"
+                sendstarttime=""
+                remark="电子产品 笔记本显卡"
+                is_unified_waybill_no="1">
+        </Order>
+    </Body>
+</Request>
