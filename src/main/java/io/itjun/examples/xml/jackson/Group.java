@@ -14,7 +14,7 @@ import java.util.List;
 public class Group {
 
     @JacksonXmlProperty(localName = "Teacher")
-   private Teacher teacher;  //教师
+    private Teacher teacher;  //教师
 
     @JacksonXmlElementWrapper(localName = "Students")
     @JacksonXmlProperty(localName = "Stu")

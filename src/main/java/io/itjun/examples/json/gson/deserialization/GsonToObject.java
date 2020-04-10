@@ -1,7 +1,5 @@
 package io.itjun.examples.json.gson.deserialization;
 
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import io.itjun.examples.json.jackson.Logistics;
