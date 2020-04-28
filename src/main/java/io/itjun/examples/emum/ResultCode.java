@@ -33,7 +33,7 @@ public enum ResultCode {
 
     public static void main(String[] args) throws Exception {
         // 1.得到枚举类对象
-        Class<?> clz = cn.cerc.erp.api.ResultCode.class;
+        Class<?> clz = ResultCode.class;
         // 2.得到所有枚举常量
         Object[] objects = clz.getEnumConstants();
         Method getCode = clz.getMethod("getCode");
