@@ -26,9 +26,7 @@ public class JacJsonToMap {
         TypeFactory typeFactory = mapper.getTypeFactory();
         MapType mapType = typeFactory.constructMapType(HashMap.class, String.class, String.class);
         HashMap<String, String> map = mapper.readValue(json, mapType);
-        map.forEach((k, v) -> {
-            log.info("{} {}", k, v);
-        });
+        map.forEach((k, v) -> log.info("{} {}", k, v));
     }
 
 }
