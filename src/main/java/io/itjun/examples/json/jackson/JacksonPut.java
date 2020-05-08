@@ -69,6 +69,8 @@ public class JacksonPut {
         log.info("personNode \r\n {}", mapper.writeValueAsString(personNode));
 
         JsonNode node = mapper.readTree(personNode.toString());
+        System.out.println(node.has("name"));
+
         System.out.println(node.get("name").asText());
         System.out.println(node.get("age").asInt());
         System.out.println(node.get("address").get("zip").asText());
