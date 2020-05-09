@@ -12,7 +12,7 @@ import lombok.extern.slf4j.Slf4j;
 public class JacksonPut {
 
     public static void main(String[] args) throws JsonProcessingException {
-        person();
+        child();
     }
 
     /**
@@ -26,6 +26,7 @@ public class JacksonPut {
         root1.put("nodekey1", 1);
         root1.put("nodekey2", 2);
         System.out.println(mapper.writeValueAsString(root1));
+        System.out.println(root1.toString());
 
         //Create the root node
         ObjectNode root = mapper.createObjectNode();
