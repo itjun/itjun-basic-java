@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
@@ -27,6 +28,7 @@ public class JacksonPut {
         root1.put("nodekey2", 2);
         System.out.println(mapper.writeValueAsString(root1));
         System.out.println(root1.toString());
+        System.out.println(new Gson().toJson(root1.toString()));
 
         //Create the root node
         ObjectNode root = mapper.createObjectNode();
