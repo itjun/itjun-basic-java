@@ -82,14 +82,17 @@ public class JacksonPut {
         // 通过 path 查找节点
         JsonNode searchNode = personNode.path("street");
         System.out.println(searchNode);
+
         // 删除属性
         ((ObjectNode) personNode).remove("address");
 
-        //读取 json
+        // 读取 json 字符串
         JsonNode rootNode = mapper.readTree(personNode.toString());
-        //JsonNode 转换成 java 对象
+
+        // JsonNode 转换成 java 对象
         Person person = mapper.treeToValue(personNode, Person.class);
-        //java 对象转换成 JsonNode
+
+        // java 对象转换成 JsonNode
         JsonNode node2 = mapper.valueToTree(person);
     }
 }
