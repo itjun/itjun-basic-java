@@ -90,7 +90,7 @@ public class JacksonPut {
         //JsonNode 转换成 java 对象
         Person person = mapper.treeToValue(personNode, Person.class);
         //java 对象转换成 JsonNode
-//        JsonNode node = mapper.valueToTree(person);
+        JsonNode node2 = mapper.valueToTree(person);
     }
 }
 
