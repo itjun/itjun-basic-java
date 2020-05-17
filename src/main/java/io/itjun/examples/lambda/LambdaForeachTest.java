@@ -3,7 +3,10 @@ package io.itjun.examples.lambda;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LambdaTest {
+/**
+ * 使用lambda表达式和普通for循环表达式性能比较测试
+ */
+public class LambdaForeachTest {
 
     public static void main(String[] args) {
         List<User> userList = initList(5000);
