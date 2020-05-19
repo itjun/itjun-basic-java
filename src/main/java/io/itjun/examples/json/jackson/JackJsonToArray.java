@@ -3,6 +3,7 @@ package io.itjun.examples.json.jackson;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.json.JsonMapper;
 import io.itjun.examples.config.AppConfig;
 import lombok.extern.slf4j.Slf4j;
 
@@ -16,7 +17,7 @@ public class JackJsonToArray {
         // 字符串数据
         String[] array = {"A", "B", "C", "D", "E"};
 
-        ObjectMapper mapper = new ObjectMapper();
+        JsonMapper mapper = new JsonMapper();
         String json = mapper.writeValueAsString(array);
         log.info("{}", json);
 
