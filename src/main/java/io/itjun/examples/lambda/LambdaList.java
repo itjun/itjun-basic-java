@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
-public class StreamList {
+public class LambdaList {
 
     public static void main(String[] args) {
         List<String> list = new ArrayList<>();
@@ -15,6 +15,7 @@ public class StreamList {
         list.add("24");
         list.add("35");
         list.add("19");
+
         log.info("count {}", list.stream().mapToInt(Integer::parseInt).filter(k -> k > 2).count());
         log.info("max {}", list.stream().mapToInt(Integer::parseInt).max().getAsInt());
         log.info("anyMatch {}", list.stream().mapToInt(Integer::parseInt).filter(k -> k > 1).anyMatch(k -> k == 5));
