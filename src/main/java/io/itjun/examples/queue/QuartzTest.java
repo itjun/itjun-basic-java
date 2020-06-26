@@ -6,6 +6,9 @@ import org.springframework.stereotype.Component;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
+/**
+ * 测试Quartz不同设置的执行流程
+ */
 @Component
 public class QuartzTest {
 
