@@ -17,9 +17,8 @@ java中23种设计模式：
 对于事物该怎么描述，还怎么描述。
 当需要将该事物的对象保证在内存中唯一时，就将以上的三步加上即可。
 */
-
 public class Single {
-    private static Single instance = new Single();
+    private static final Single instance = new Single();
     private int num;
 
     private Single() {
@@ -32,6 +31,14 @@ public class Single {
         return instance;
     }
 
+    public int getAge() {
+        return num;
+    }
+
+    public void setAge(int age) {
+        this.num = age;
+    }
+
     public static void main(String[] args) {
         Single student1 = Single.getInstance();
         student1.setAge(20);
@@ -40,11 +47,4 @@ public class Single {
         System.out.println(student2.getAge());
     }
 
-    public int getAge() {
-        return num;
-    }
-
-    public void setAge(int age) {
-        this.num = age;
-    }
 }
