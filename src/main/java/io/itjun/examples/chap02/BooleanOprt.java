@@ -6,6 +6,12 @@ package io.itjun.examples.chap02;
 public class BooleanOprt {
 
     public static void main(String[] args) {
+        // 小括号的高优先级运算调整
+        int a = 10;
+        int b = 88;
+        boolean c = ((a + b) * a - (a - 1) * (a + b)) == (a + b);
+        System.out.println(c);
+
         boolean t = true;
         boolean f = false;
 
@@ -20,6 +26,7 @@ public class BooleanOprt {
 
         // 位或，会计算后面的类型
         System.out.println(t | (10 / 0 > 0));
+
     }
 
 }
