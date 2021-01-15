@@ -4,10 +4,11 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.LongAdder;
 
-/*
-演示GC日志生成与解读
-*/
+/**
+ * 演示GC日志生成与解读
+ */
 public class GCLogAnalysis {
+
     private static Random random = new Random();
 
     public static void main(String[] args) {
