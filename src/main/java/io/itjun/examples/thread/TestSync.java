@@ -1,17 +1,17 @@
 package io.itjun.examples.thread;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.ArrayList;
 import java.util.List;
 
-import lombok.extern.slf4j.Slf4j;
-
 @Slf4j
-public class TestStart implements Runnable {
+public class TestSync implements Runnable {
     private static long sum;
     private int x;
     private int y;
 
-    public TestStart(int x, int y) {
+    public TestSync(int x, int y) {
         this.x = x;
         this.y = y;
     }
@@ -29,7 +29,7 @@ public class TestStart implements Runnable {
         long start = System.currentTimeMillis();
         List<Thread> list = new ArrayList<>();
         for (int i = 0; i < 100; i++) {
-            list.add(new Thread(new TestStart(1, 1000000)));
+            list.add(new Thread(new TestSync(1, 1000000)));
         }
         list.forEach(t -> {
             t.start();
@@ -42,7 +42,7 @@ public class TestStart implements Runnable {
             }
         });
 
-        log.info("{}", TestStart.sum);
+        log.info("{}", TestSync.sum);
         log.info("{}", System.currentTimeMillis() - start);
     }
 }
