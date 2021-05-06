@@ -1,17 +1,20 @@
 package io.itjun.examples.thread;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.atomic.AtomicLong;
+
 import lombok.Getter;
-import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class Test implements Runnable {
-    @Getter
-    @Setter
-    private int sum;
 
-    private final int x;
-    private final int y;
+    @Getter
+    private static AtomicLong sum = new AtomicLong();
+
+    private int x;
+    private int y;
 
     public Test(int x, int y) {
         this.x = x;
@@ -20,20 +23,28 @@ public class Test implements Runnable {
 
     @Override
     public void run() {
-        this.sum++;
-        log.info("{}", this.sum);
+        for (int i = x; i <= y; i++) {
+            sum.addAndGet(i);
+        }
     }
 
     public static void main(String[] args) {
-        Test t1 = new Test(1, 100);
-        Thread thread1 = new Thread(t1);
-//        Test t2 = new Test(1, 100);
-
-//        thread1.run();
-        thread1.start();
-//        t2.start();
-        log.info("{}", t1.sum);
-        log.info("{}", t1.getSum());
-        log.info("{}", t1.getSum());
+        long start = System.currentTimeMillis();
+        List<Thread> list = new ArrayList<>();
+        for (int i = 0; i < 100; i++) {
+            list.add(new Thread(new Test(1, 1000000)));
+        }
+        list.forEach(t -> {
+            t.start();
+        });
+        list.forEach(t -> {
+            try {
+                t.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
+        log.info("{}", Test.getSum());
+        log.info("{}", System.currentTimeMillis() - start);
     }
 }

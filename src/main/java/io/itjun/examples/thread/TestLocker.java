@@ -2,34 +2,40 @@ package io.itjun.examples.thread;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class TestStart implements Runnable {
+public class TestLocker implements Runnable {
+
     private static long sum;
+
+    private static final Lock locker = new ReentrantLock();
+
     private int x;
     private int y;
 
-    public TestStart(int x, int y) {
+    public TestLocker(int x, int y) {
         this.x = x;
         this.y = y;
     }
 
     @Override
     public void run() {
+        locker.lock();
         for (int i = x; i <= y; i++) {
-            synchronized (this.getClass()) {
-                sum += i;
-            }
+            sum += i;
         }
+        locker.unlock();
     }
 
     public static void main(String[] args) {
         long start = System.currentTimeMillis();
         List<Thread> list = new ArrayList<>();
         for (int i = 0; i < 100; i++) {
-            list.add(new Thread(new TestStart(1, 1000000)));
+            list.add(new Thread(new TestLocker(1, 1000000)));
         }
         list.forEach(t -> {
             t.start();
@@ -41,8 +47,8 @@ public class TestStart implements Runnable {
                 e.printStackTrace();
             }
         });
-
-        log.info("{}", TestStart.sum);
+        log.info("{}", TestLocker.sum);
         log.info("{}", System.currentTimeMillis() - start);
     }
+
 }
