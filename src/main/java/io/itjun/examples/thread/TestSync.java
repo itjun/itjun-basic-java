@@ -4,11 +4,11 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 @Slf4j
 public class TestSync implements Runnable {
-    private static final AtomicBoolean lock = new AtomicBoolean(true);
+//    private static final AtomicBoolean lock = new AtomicBoolean(true);
+    private static final String lock = "yes";
     private static long sum;
     private int x;
     private int y;
