@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/itjun/java-learning.svg?branch=main)](https://travis-ci.com/itjun/java-learning)
 
-1. 该学习项目全程使用 `IntelliJ IDEA` 进行学习和编码，以上说明！
+1. 该学习项目主要使用 `IntelliJ IDEA` 进行学习和编码，以上说明！
 2. 若使用 eclipse 进行修改，请直接从 eclipse 导入 pom.xml 即可。
 3. 为了尽量确保代码的清晰和可执行性，尽量将每个范例直接放置到一个类的main方法中运行。
 4. 代码即注释，相关的说明和注解直接在代码中。
