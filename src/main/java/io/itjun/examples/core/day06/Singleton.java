@@ -24,13 +24,9 @@ public class Singleton {
         singleton.setCount(2017);
 
         for (int i = 0; i < 1000; i++) {
-            new Thread(new Runnable() {
-
-                @Override
-                public void run() {
-                    Singleton singleton = Singleton.getInstance();
-                    System.out.println(singleton.getCount());
-                }
+            new Thread(() -> {
+                Singleton item = Singleton.getInstance();
+                System.out.println(item.getCount());
             }).start();
         }
 

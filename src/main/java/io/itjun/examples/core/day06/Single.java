@@ -19,7 +19,7 @@ java中23种设计模式：
 */
 
 public class Single {
-    private static Single single = new Single();
+    private static final Single single = new Single();
     private int count;
 
     private Single() {
@@ -36,13 +36,9 @@ public class Single {
         single.setCount(2017);
 
         for (int i = 0; i < 1000; i++) {
-            new Thread(new Runnable() {
-
-                @Override
-                public void run() {
-                    Single single = Single.getInstance();
-                    System.out.println(single.getCount());
-                }
+            new Thread(() -> {
+                Single single1 = Single.getInstance();
+                System.out.println(single1.getCount());
             }).start();
         }
 

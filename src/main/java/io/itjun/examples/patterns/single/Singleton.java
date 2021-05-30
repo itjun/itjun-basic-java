@@ -1,4 +1,7 @@
-package io.itjun.examples.single;
+package io.itjun.examples.patterns.single;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class Singleton {
     private static volatile Singleton INSTANCE = null;
@@ -21,4 +24,11 @@ public class Singleton {
         }
         return INSTANCE;
     }
+
+    public static void main(String[] args) {
+        for (int i = 0; i < 100; i++) {
+            new Thread(() -> System.out.println(Singleton.getInstance().hashCode())).start();
+        }
+    }
+
 }
