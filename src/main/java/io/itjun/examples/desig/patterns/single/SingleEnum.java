@@ -2,6 +2,8 @@ package io.itjun.examples.desig.patterns.single;
 
 import com.google.gson.Gson;
 
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,7 +21,12 @@ public enum SingleEnum {
         return client;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+        // 用jad.exe反编译枚举对象得到的构造器参数
+        Constructor<SingleEnum> declaredConstructor = SingleEnum.class.getDeclaredConstructor(String.class, int.class);
+        declaredConstructor.setAccessible(true);
+        SingleEnum item2 = declaredConstructor.newInstance();
+
         System.out.println(new Gson().toJson(SingleEnum.INSTANCE));
         List<Thread> list = new ArrayList<>();
         for (int i = 0; i < 100; i++) {
@@ -29,7 +36,6 @@ public enum SingleEnum {
         }
 
         list.forEach(Thread::start);
-
         list.forEach(t -> {
             try {
                 t.join();

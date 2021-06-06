@@ -3,6 +3,10 @@ package io.itjun.examples.desig.patterns.single;
 /**
  * 饿汉式实现单例模式
  * <p>
+ * 缺点： 一开始直接初始化不必要的数据，浪费内存。
+ * <p>
+ * 优点：对必须使用的对象提前创建，能加快访问速度。
+ * <p>
  * 设计模式：解决某一类问题最行之有效的方法。
  * java中23种设计模式：
  * 单例设计模式：解决一个类在内存只存在一个对象。
@@ -20,17 +24,17 @@ package io.itjun.examples.desig.patterns.single;
  * 对于事物该怎么描述，还怎么描述。
  * 当需要将该事物的对象保证在内存中唯一时，就将以上的三步加上即可。
  */
-public class Single {
-    private static final Single instance = new Single();
+public class Hungry {
+    private static final Hungry instance = new Hungry();
     private int num;
 
-    private Single() {
+    private Hungry() {
         if (instance != null) {
             throw new RuntimeException("Single instance is not null");
         }
     }
 
-    public static Single getInstance() {
+    public static Hungry getInstance() {
         return instance;
     }
 
@@ -43,10 +47,10 @@ public class Single {
     }
 
     public static void main(String[] args) {
-        Single item1 = Single.getInstance();
+        Hungry item1 = Hungry.getInstance();
         item1.setNum(20);
 
-        Single item2 = Single.getInstance();
+        Hungry item2 = Hungry.getInstance();
         System.out.println(item2.getNum());
     }
 
