@@ -13,6 +13,9 @@ public class LazyDoubleCheck {
     // Private constructor suppresses 
     // default public constructor
     private LazyDoubleCheck() {
+        if (client != null) {
+            throw new RuntimeException("client is not null");
+        }
     }
 
     // thread safe and performance  promote
