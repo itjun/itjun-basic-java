@@ -1,5 +1,7 @@
 package io.itjun.examples.desig.patterns.single;
 
+import com.google.gson.Gson;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,6 +20,7 @@ public enum SingleEnum {
     }
 
     public static void main(String[] args) {
+        System.out.println(new Gson().toJson(SingleEnum.INSTANCE));
         List<Thread> list = new ArrayList<>();
         for (int i = 0; i < 100; i++) {
             list.add(new Thread(() -> {
