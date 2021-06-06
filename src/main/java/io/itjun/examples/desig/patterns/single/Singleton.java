@@ -1,7 +1,4 @@
-package io.itjun.examples.patterns.single;
-
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+package io.itjun.examples.desig.patterns.single;
 
 public class Singleton {
     private static volatile Singleton INSTANCE = null;

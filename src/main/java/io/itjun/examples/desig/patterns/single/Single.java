@@ -1,4 +1,4 @@
-package io.itjun.examples.patterns.single;
+package io.itjun.examples.desig.patterns.single;
 /*
 设计模式：解决某一类问题最行之有效的方法。
 java中23种设计模式：
