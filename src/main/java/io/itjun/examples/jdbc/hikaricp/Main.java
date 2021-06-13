@@ -55,7 +55,7 @@ public class Main {
     }
 
     static Student extractRow(ResultSet rs) throws SQLException {
-        var std = new Student();
+        Student std = new Student();
         std.setId(rs.getLong("id"));
         std.setName(rs.getString("name"));
         std.setGender(rs.getBoolean("gender"));
