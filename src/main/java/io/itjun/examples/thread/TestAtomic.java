@@ -34,9 +34,7 @@ public class TestAtomic implements Runnable {
         for (int i = 0; i < 100; i++) {
             list.add(new Thread(new TestAtomic(1, 1000000)));
         }
-        list.forEach(t -> {
-            t.start();
-        });
+        list.forEach(t -> t.start());
         list.forEach(t -> {
             try {
                 t.join();
