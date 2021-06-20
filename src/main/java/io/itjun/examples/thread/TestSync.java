@@ -7,8 +7,8 @@ import java.util.List;
 
 @Slf4j
 public class TestSync implements Runnable {
-//    private static final AtomicBoolean lock = new AtomicBoolean(true);
-    private static final String lock = "yes";
+    //    private static final AtomicBoolean lock = new AtomicBoolean(true);
+    private static final String lock = "yes";// 锁字符串效率很低
     private static long sum;
     private int x;
     private int y;
@@ -21,8 +21,8 @@ public class TestSync implements Runnable {
     @Override
     public void run() {
         for (int i = x; i <= y; i++) {
-//            synchronized (this.getClass()) {
-            synchronized (lock) {
+            synchronized (this) {
+//            synchronized (lock) {
                 sum += i;
             }
         }
@@ -34,9 +34,7 @@ public class TestSync implements Runnable {
         for (int i = 0; i < 100; i++) {
             list.add(new Thread(new TestSync(1, 1000000)));
         }
-        list.forEach(t -> {
-            t.start();
-        });
+        list.forEach(Thread::start);
         list.forEach(t -> {
             try {
                 t.join();

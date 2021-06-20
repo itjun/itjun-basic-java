@@ -1,11 +1,11 @@
 package io.itjun.examples.thread;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
-
-import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class TestLocker implements Runnable {
@@ -37,9 +37,7 @@ public class TestLocker implements Runnable {
         for (int i = 0; i < 100; i++) {
             list.add(new Thread(new TestLocker(1, 1000000)));
         }
-        list.forEach(t -> {
-            t.start();
-        });
+        list.forEach(Thread::start);
         list.forEach(t -> {
             try {
                 t.join();

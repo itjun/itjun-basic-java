@@ -11,7 +11,7 @@ import java.util.concurrent.atomic.AtomicLong;
 public class TestAtomic implements Runnable {
 
     @Getter
-    private static AtomicLong sum = new AtomicLong();
+    private static final AtomicLong sum = new AtomicLong();
 
     private int x;
     private int y;
@@ -34,7 +34,7 @@ public class TestAtomic implements Runnable {
         for (int i = 0; i < 100; i++) {
             list.add(new Thread(new TestAtomic(1, 1000000)));
         }
-        list.forEach(t -> t.start());
+        list.forEach(Thread::start);
         list.forEach(t -> {
             try {
                 t.join();
