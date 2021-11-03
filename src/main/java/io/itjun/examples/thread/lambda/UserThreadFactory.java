@@ -1,6 +1,7 @@
 package io.itjun.examples.thread.lambda;
 
-import javax.validation.constraints.NotNull;
+import org.springframework.lang.NonNull;
+
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -13,7 +14,7 @@ public class UserThreadFactory implements ThreadFactory {
     }
 
     @Override
-    public Thread newThread(@NotNull Runnable r) {
+    public Thread newThread(@NonNull Runnable r) {
         String name = namePrefix + nextId.getAndIncrement();
         Thread thread = new Thread(null, r, name, 0, false);
         System.out.println("Factory thread Name：" + thread.getName() + " HashCode：" + r.hashCode());
