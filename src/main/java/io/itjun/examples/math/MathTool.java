@@ -40,11 +40,16 @@ public class MathTool {
     }
 
     public static void main(String[] args) {
-        System.out.println(MathTool.add(37121, 0.475));
-        System.out.println(MathTool.subtract(37121, 0.475));
+//        System.out.println(MathTool.add(37121, 0.475));
+//        System.out.println(MathTool.subtract(37121, 0.475));
+
+        System.out.println(37121 * 0.475);
         System.out.println(MathTool.multiply(37121, 0.475));
+
+        System.out.println(6879 * 0.475);
         System.out.println(MathTool.multiply(6879, 0.475));
-        System.out.println(MathTool.divide(1, 3));
+
+//        System.out.println(MathTool.divide(1, 3));
     }
 
 }
