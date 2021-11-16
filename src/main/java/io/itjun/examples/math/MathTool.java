@@ -8,6 +8,8 @@ import java.math.RoundingMode;
  */
 public class MathTool {
 
+    private static final RoundingMode MODE = RoundingMode.HALF_EVEN;
+
     private MathTool() {
     }
 
@@ -15,39 +17,40 @@ public class MathTool {
         BigDecimal d1 = new BigDecimal(Double.toString(v1));
         BigDecimal d2 = new BigDecimal(Double.toString(v2));
         BigDecimal result = d1.add(d2);
-        return result.setScale(2, RoundingMode.HALF_UP).doubleValue();
+        return result.setScale(2, MODE).doubleValue();
     }
 
     public static double subtract(double v1, double v2) {
         BigDecimal d1 = new BigDecimal(Double.toString(v1));
         BigDecimal d2 = new BigDecimal(Double.toString(v2));
         BigDecimal result = d1.subtract(d2);
-        return result.setScale(2, RoundingMode.HALF_UP).doubleValue();
+        return result.setScale(2, MODE).doubleValue();
     }
 
     public static double multiply(double v1, double v2) {
         BigDecimal d1 = new BigDecimal(Double.toString(v1));
         BigDecimal d2 = new BigDecimal(Double.toString(v2));
-        BigDecimal result = d1.multiply(d2);
-        return result.setScale(2, RoundingMode.HALF_UP).doubleValue();
+        BigDecimal result = d1.multiply(d2) ;
+        return result.setScale(2, MODE).doubleValue();
     }
 
     public static double divide(double v1, double v2) {
         BigDecimal d1 = new BigDecimal(Double.toString(v1));
         BigDecimal d2 = new BigDecimal(Double.toString(v2));
-        BigDecimal result = d1.divide(d2, 2, RoundingMode.HALF_UP);
+        BigDecimal result = d1.divide(d2, 2, MODE);
         return result.doubleValue();
     }
 
     public static void main(String[] args) {
-//        System.out.println(MathTool.add(37121, 0.475));
+//        System.out.println(0.1 + 0.2);
+//        System.out.println(MathTool.add(0.1, 0.2));
 //        System.out.println(MathTool.subtract(37121, 0.475));
 
         System.out.println(37121 * 0.475);
         System.out.println(MathTool.multiply(37121, 0.475));
-
-        System.out.println(6879 * 0.475);
-        System.out.println(MathTool.multiply(6879, 0.475));
+//
+//        System.out.println(6879 * 0.475);
+//        System.out.println(MathTool.multiply(6879, 0.475));
 
 //        System.out.println(MathTool.divide(1, 3));
     }
