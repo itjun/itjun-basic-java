@@ -8,7 +8,8 @@ import java.math.RoundingMode;
  */
 public class MathTool {
 
-    private static final RoundingMode MODE = RoundingMode.HALF_EVEN;
+    private static final RoundingMode mode = RoundingMode.HALF_EVEN;// 银行家舍入模式
+    private static final int scale = 2;// 默认保留的小数位数
 
     private MathTool() {
     }
@@ -17,27 +18,27 @@ public class MathTool {
         BigDecimal d1 = new BigDecimal(Double.toString(v1));
         BigDecimal d2 = new BigDecimal(Double.toString(v2));
         BigDecimal result = d1.add(d2);
-        return result.setScale(2, MODE).doubleValue();
+        return result.setScale(scale, mode).doubleValue();
     }
 
     public static double subtract(double v1, double v2) {
         BigDecimal d1 = new BigDecimal(Double.toString(v1));
         BigDecimal d2 = new BigDecimal(Double.toString(v2));
         BigDecimal result = d1.subtract(d2);
-        return result.setScale(2, MODE).doubleValue();
+        return result.setScale(scale, mode).doubleValue();
     }
 
     public static double multiply(double v1, double v2) {
         BigDecimal d1 = new BigDecimal(Double.toString(v1));
         BigDecimal d2 = new BigDecimal(Double.toString(v2));
-        BigDecimal result = d1.multiply(d2) ;
-        return result.setScale(2, MODE).doubleValue();
+        BigDecimal result = d1.multiply(d2);
+        return result.setScale(scale, mode).doubleValue();
     }
 
     public static double divide(double v1, double v2) {
         BigDecimal d1 = new BigDecimal(Double.toString(v1));
         BigDecimal d2 = new BigDecimal(Double.toString(v2));
-        BigDecimal result = d1.divide(d2, 2, MODE);
+        BigDecimal result = d1.divide(d2, scale, mode);
         return result.doubleValue();
     }
 
