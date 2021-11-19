@@ -9,7 +9,7 @@ import java.util.concurrent.atomic.LongAdder;
  */
 public class GCLogAnalysis {
 
-    private static Random random = new Random();
+    private static final Random random = new Random();
 
     public static void main(String[] args) {
         // 当前毫秒时间戳
