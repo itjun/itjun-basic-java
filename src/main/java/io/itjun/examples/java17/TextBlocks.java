@@ -9,11 +9,29 @@ public class TextBlocks {
 
     private static void oldStyle() {
         System.out.println("""
-                {
-                "name": "John Doe",
-                "age": 45,
-                "address": "Doe Street, 23, Java Town"
-                }
+                [
+                    {
+                        "partCode": "911001001921",
+                        "num": 1,
+                        "spare": false,
+                        "remark": "",
+                        "oriUP": 1
+                    },
+                    {
+                        "partCode": "KS500-ZL40/50",
+                        "num": 1,
+                        "spare": false,
+                        "remark": "",
+                        "oriUP": 1
+                    },
+                    {
+                        "partCode": "911001001931",
+                        "num": 1,
+                        "spare": false,
+                        "remark": "",
+                        "oriUP": 1
+                    }
+                ]
                 """);
         String text = "{\n" +
                 "  \"name\": \"John Doe\",\n" +
