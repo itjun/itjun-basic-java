@@ -18,7 +18,7 @@ public class Holder {
     private Holder() {
     }
 
-    private static class SingletonInstance {
+    private static final class SingletonInstance {
         private static final Holder HOLDER = new Holder();
     }
 
