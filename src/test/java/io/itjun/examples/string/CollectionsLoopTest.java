@@ -11,7 +11,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * 百万数据遍历，list、set、map 对比速度
+ * 百万数据遍历，list、set、map 查找速度
  */
 @Slf4j
 public class CollectionsLoopTest {
@@ -44,12 +44,12 @@ public class CollectionsLoopTest {
 
     @Test
     public void test_map() {
-        Map<String, String> sets = new HashMap();
+        Map<String, String> map = new HashMap<>();
         for (int i = 0; i < size; i++) {
-            sets.put("key" + i, "value" + i);
+            map.put("key" + i, "value" + i);
         }
         long start = System.nanoTime();
-        boolean result = sets.containsKey("key" + (size - 1));
+        boolean result = map.containsKey("key" + (size - 1));
         long end = System.nanoTime();
         log.info("map执行时间 {}, {}", (end - start), result);
     }
