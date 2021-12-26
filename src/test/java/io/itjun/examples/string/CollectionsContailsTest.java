@@ -10,10 +10,10 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 百万数据遍历，list、set、map 纯内容不涉及sql等网络操作
+ * 百万数据遍历，list、set、map 查找速度
  */
 @Slf4j
-public class CollectionsLoopTest {
+public class CollectionsContailsTest {
 
     private static final int size = 1000000;
 
@@ -24,16 +24,9 @@ public class CollectionsLoopTest {
             list.add("value" + i);
         }
         long start = System.nanoTime();
-        list.parallelStream().forEach(k -> {
-        });
+        boolean result = list.contains("value" + (size - 1));
         long end = System.nanoTime();
-        log.info("list并行执行时间 {}", (end - start));
-
-        long s2 = System.nanoTime();
-        list.forEach(k -> {
-        });
-        long e2 = System.nanoTime();
-        log.info("list单线执行时间 {}", (e2 - s2));
+        log.info("list执行时间 {}, {}", (end - start), result);
     }
 
     @Test
@@ -43,16 +36,9 @@ public class CollectionsLoopTest {
             set.add("value" + i);
         }
         long start = System.nanoTime();
-        set.parallelStream().forEach(k -> {
-        });
+        boolean result = set.contains("value" + (size - 1));
         long end = System.nanoTime();
-        log.info("set并行执行时间 {}", (end - start));
-
-        long s2 = System.nanoTime();
-        set.forEach(k -> {
-        });
-        long e2 = System.nanoTime();
-        log.info("set单线执行时间 {}", (e2 - s2));
+        log.info("set执行时间 {}, {}", (end - start), result);
     }
 
     @Test
@@ -62,10 +48,9 @@ public class CollectionsLoopTest {
             map.put("key" + i, "value" + i);
         }
         long start = System.nanoTime();
-        map.forEach((k, v) -> {
-        });
+        boolean result = map.containsKey("key" + (size - 1));
         long end = System.nanoTime();
-        log.info("map单线执行时间 {}", (end - start));
+        log.info("map执行时间 {}, {}", (end - start), result);
     }
 
 }
