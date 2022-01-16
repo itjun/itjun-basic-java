@@ -10,10 +10,10 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 百万数据遍历，list、set、map 查找速度
+ * 百万数据查找，list、set、map 查找速度
  */
 @Slf4j
-public class CollectionsContailsTest {
+public class CollectionsContainsTest {
 
     private static final int size = 1000000;
 
