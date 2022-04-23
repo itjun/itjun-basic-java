@@ -10,7 +10,7 @@ public enum ResultCode {
     private String code;
     private String name;
 
-    private ResultCode(String code, String name) {
+    ResultCode(String code, String name) {
         this.code = code;
         this.name = name;
     }
