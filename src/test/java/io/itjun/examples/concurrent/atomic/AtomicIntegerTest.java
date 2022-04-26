@@ -37,4 +37,14 @@ public class AtomicIntegerTest {
         log.info("{}", atomic.get());// 11
     }
 
+    @Test
+    public void test_2() {
+        AtomicInteger atomic = new AtomicInteger(100);// 初始值
+        log.info("{}", atomic.compareAndSet(5, 105));// current value  100，update failure
+        log.info("{}", atomic.compareAndSet(100, 105));// update success
+        log.info("{}", atomic.get());// 105
+        log.info("{}", atomic.compareAndExchange(105, 100));// 返回旧值 105
+        log.info("{}", atomic.get());// 100
+    }
+
 }
