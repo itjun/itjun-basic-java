@@ -15,7 +15,7 @@ import org.junit.jupiter.api.Test;
 @Slf4j
 public class StringBuilderTest {
 
-    private static final int times = 99999999;
+    private static final int times = Integer.MAX_VALUE / 5;
 
     @Test
     public void test_buff() {
