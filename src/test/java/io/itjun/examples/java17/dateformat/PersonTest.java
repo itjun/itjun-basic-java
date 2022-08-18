@@ -19,6 +19,8 @@ class PersonTest {
         System.out.println(new Gson().toJson(person));
         System.out.println(person.name());
         System.out.println(person.address());
+        System.out.println(Person.class.isRecord());
+        System.out.println(Person.class.isAssignableFrom(Person.class));
     }
 
 }
