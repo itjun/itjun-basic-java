@@ -8,6 +8,8 @@ public class Lazy {
 
     private boolean itjun = false;
 
+    private static Lazy lazy;
+
     private Lazy() {
         synchronized (Lazy.class) {
             if (lazy != null) {
@@ -17,8 +19,6 @@ public class Lazy {
         }
         System.out.println(Thread.currentThread().getName());
     }
-
-    private static Lazy lazy;
 
     /**
      * 1、分配内存空间
