@@ -30,9 +30,7 @@ public enum SingleEnum {
         System.out.println(new Gson().toJson(SingleEnum.INSTANCE));
         List<Thread> list = new ArrayList<>();
         for (int i = 0; i < 100; i++) {
-            list.add(new Thread(() -> {
-                System.out.println(SingleEnum.INSTANCE.getClient().hashCode());
-            }));
+            list.add(new Thread(() -> System.out.println(SingleEnum.INSTANCE.getClient().hashCode())));
         }
 
         list.forEach(Thread::start);

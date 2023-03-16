@@ -22,6 +22,10 @@ public class GrapeClassRecord {
                 throw new IllegalArgumentException("Color may not be null");
             }
         }
+
+        public static GrapeRecord of(Color color, int nbrOfPits) {
+            return new GrapeRecord(color, nbrOfPits);
+        }
     }
 
     public static void main(String[] args) throws JsonProcessingException {
@@ -34,13 +38,14 @@ public class GrapeClassRecord {
                 * Basic record *
                 ****************""");
 
-        GrapeRecord grape1 = new GrapeRecord(Color.BLUE, 1);
-        GrapeRecord grape2 = new GrapeRecord(Color.WHITE, 2);
+        GrapeRecord grape1 = GrapeRecord.of(Color.BLUE, 1);
+        GrapeRecord grape2 = GrapeRecord.of(Color.BLUE, 1);
         System.out.println("Grape 1 is " + grape1);
         System.out.println("Grape 2 is " + grape2);
-        System.out.println("Grape 1 equals grape 2? " + grape1.equals(grape2));
+        System.out.println("Grape 1 equals grape 2?  " + grape1.equals(grape2));
+
         GrapeRecord grape1Copy = new GrapeRecord(grape1.color(), grape1.nbrOfPits());
-        System.out.println("Grape 1 equals its copy? " + grape1.equals(grape1Copy));
+        System.out.println("Grape 1 equals its copy?  " + grape1.equals(grape1Copy));
     }
 
 }
