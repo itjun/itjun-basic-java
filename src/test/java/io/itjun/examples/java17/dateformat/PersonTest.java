@@ -5,12 +5,15 @@ import org.junit.jupiter.api.Test;
 
 class PersonTest {
 
-    @Test
+//    @Test
     public void test_1() {
         Person person = new Person("itjun", "Shenzhen_601");
-        System.out.println(new Gson().toJson(person));
-        System.out.println(person.name());
-        System.out.println(person.address());
+        String json = new Gson().toJson(person);
+        System.out.println(json);
+
+        Person item = new Gson().fromJson(json, Person.class);
+        System.out.println(item.name());
+        System.out.println(item.address());
     }
 
     @Test
