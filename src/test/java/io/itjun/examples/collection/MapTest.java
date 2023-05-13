@@ -4,8 +4,10 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.Set;
 
 @Slf4j
 public class MapTest {
@@ -57,6 +59,17 @@ public class MapTest {
 
         items.values().removeIf(v -> v.contains("a"));
         items.keySet().forEach(log::info);
+    }
+
+    @Test
+    public void test_4() {
+        long start = System.currentTimeMillis();
+        Set<Integer> uids = new HashSet<>();
+        for (int i = 0; i < 100000000L; i++) {
+            uids.add(i);
+        }
+        System.out.println(System.currentTimeMillis() - start);
+        System.out.println(uids.size());
     }
 
 }
