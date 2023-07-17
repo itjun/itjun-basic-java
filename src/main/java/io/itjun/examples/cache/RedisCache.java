@@ -18,9 +18,9 @@ import java.util.stream.IntStream;
 /**
  * Java业务开发常见错误100例
  * <p>
- * https://time.geekbang.org/column/article/231501
+ * <a href="https://time.geekbang.org/column/article/231501">...</a>
  * <p>
- * wrk -c10 -t10 -d 100s http://localhost:45678/cacheinvalid/city
+ * wrk -c10 -t10 -d 100s <a href="http://localhost:45678/cacheinvalid/city">...</a>
  */
 @Slf4j
 public class RedisCache {
