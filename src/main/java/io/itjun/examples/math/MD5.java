@@ -1,6 +1,5 @@
 package io.itjun.examples.math;
 
-import javax.xml.bind.DatatypeConverter;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Locale;
@@ -8,21 +7,11 @@ import java.util.Locale;
 /**
  * 字符串转md5
  */
-public class MD5Tool {
+public class MD5 {
 
     public static void main(String[] args) throws NoSuchAlgorithmException {
         String password = "123456";
-        System.out.println(get(password).equals(givenPassword_whenHashing_thenVerifying(password)));
-    }
-
-    public static String givenPassword_whenHashing_thenVerifying(String password)
-            throws NoSuchAlgorithmException {
-
-        MessageDigest md = MessageDigest.getInstance("MD5");
-        byte[] digest = md.digest(password.getBytes());
-        String myHash = DatatypeConverter.printHexBinary(digest).toLowerCase();
-        System.out.println(myHash);
-        return myHash;
+        System.out.println(MD5.get(password));
     }
 
     public static String get(String str) {
