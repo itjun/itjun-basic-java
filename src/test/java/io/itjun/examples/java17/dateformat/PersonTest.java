@@ -3,9 +3,11 @@ package io.itjun.examples.java17.dateformat;
 import com.google.gson.Gson;
 import org.junit.jupiter.api.Test;
 
+import java.lang.reflect.Field;
+
 class PersonTest {
 
-//    @Test
+    //    @Test
     public void test_1() {
         Person person = new Person("itjun", "Shenzhen_601");
         String json = new Gson().toJson(person);
@@ -24,6 +26,20 @@ class PersonTest {
         System.out.println(person.address());
         System.out.println(Person.class.isRecord());
         System.out.println(Person.class.isAssignableFrom(Person.class));
+    }
+
+    @Test
+    public void test_3() {
+        Person person = Person.unnamed("Shenzhen_601");
+        System.out.println("--- getDeclaredFields ---");
+        for (Field field : person.getClass().getDeclaredFields()) {
+            System.out.println(field);
+        }
+
+        System.out.println("--- getFields ---");
+        for (Field field : person.getClass().getFields()) {
+            System.out.println(field);
+        }
     }
 
 }
