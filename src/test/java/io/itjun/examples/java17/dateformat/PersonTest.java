@@ -1,19 +1,22 @@
 package io.itjun.examples.java17.dateformat;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
+import io.itjun.examples.tools.JsonTool;
 import org.junit.jupiter.api.Test;
 
 import java.lang.reflect.Field;
 
 class PersonTest {
 
-    //    @Test
+    @Test
     public void test_1() {
         Person person = new Person("itjun", "Shenzhen_601");
-        String json = new Gson().toJson(person);
+        String json = JsonTool.toJson(person);
         System.out.println(json);
 
-        Person item = new Gson().fromJson(json, Person.class);
+        Person item = JsonTool.fromJson(json, Person.class);
         System.out.println(item.name());
         System.out.println(item.address());
     }
