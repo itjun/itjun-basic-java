@@ -5,10 +5,10 @@ public class PrimaryTypes {
         byte b = 127;
         System.out.println(b);
 
-        short s = -30000;
+        short s = -30_000;
         System.out.println(s);
 
-        int i = 300000;
+        int i = 300_000;
         System.out.println(i);
 
         long l = 123456789L;

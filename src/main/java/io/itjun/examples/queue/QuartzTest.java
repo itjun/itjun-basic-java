@@ -17,7 +17,7 @@ public class QuartzTest {
     int[] delays = new int[]{8, 7, 6, 3, 2, 1, 1, 5, 1, 1, 1};
     int index = 0;
 
-    @Scheduled(cron = "0/5 * * * * ?}")
+    @Scheduled(cron = "0/5 * * * * ?")
 //    @Scheduled(fixedRate = 5 * 1000)
 //    @Scheduled(fixedDelay = 5 * 1000)
     public void process() {
