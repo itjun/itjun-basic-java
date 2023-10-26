@@ -7,7 +7,7 @@ import java.util.TimerTask;
 import java.util.concurrent.CountDownLatch;
 
 public class AMapWebConfigTest {
-    private static final int THREAD_COUNT = 1000;
+    private static final int THREAD_COUNT = 3000;
     private static final CountDownLatch startLatch = new CountDownLatch(1);
     private static final CountDownLatch finishLatch = new CountDownLatch(THREAD_COUNT);
 
