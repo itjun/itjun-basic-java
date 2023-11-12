@@ -9,7 +9,9 @@ import java.util.concurrent.atomic.AtomicInteger;
  * 用于坐标获取，静态地图等服务
  */
 public enum AMapWebConfig {
-    instance;
+
+    INSTANCE;
+
     private final List<String> list;
     private static final AtomicInteger counter = new AtomicInteger();
 
@@ -18,7 +20,7 @@ public enum AMapWebConfig {
     }
 
     private List<String> getList() {
-        String value = "9a2699c11a7f8fe7382e97fe5d60ecf,7aac08b959dce9eb39b51956b23951b";
+        String value = "";
         return List.of(value.split(","));
     }
 
@@ -28,7 +30,7 @@ public enum AMapWebConfig {
     }
 
     public static String getKey() {
-        return instance.getNext();
+        return AMapWebConfig.INSTANCE.getNext();
     }
 
 }

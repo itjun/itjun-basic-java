@@ -1,6 +1,9 @@
 package io.itjun.basic.desig.patterns.single;
 
+import io.itjun.basic.config.AppConfig;
+
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
@@ -18,7 +21,7 @@ public class AMapWebConfigTest {
             executorService.submit(() -> {
                 try {
                     startLatch.await(); // 等待所有线程都准备好
-                    AMapWebConfig config = AMapWebConfig.instance;
+                    AMapWebConfig config = AMapWebConfig.INSTANCE;
                     set.add(config);
                     if (set.size() > 1)
                         System.out.println("stop size " + set.size());
