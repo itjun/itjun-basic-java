@@ -20,6 +20,7 @@ public class GsonToMap {
         items.put("C0002", "Google");
         items.put("C0003", "Facebook");
         items.put("C0004", "Tencent");
+        items.put("C0005", System.currentTimeMillis());
 
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         String json = gson.toJson(items);
@@ -35,9 +36,9 @@ public class GsonToMap {
         items.put("list", list);
         log.info("原始数据加入List {}", gson.toJson(items));
 
-        Type type = new TypeToken<Map<String, String>>() {
+        Type type = new TypeToken<Map<String, Object>>() {
         }.getType();
-        Map<String, String> results = gson.fromJson(json, type);
+        Map<String, Object> results = gson.fromJson(json, type);
         results.forEach((k, v) -> {
             log.info("{} {}", k, v);
         });
