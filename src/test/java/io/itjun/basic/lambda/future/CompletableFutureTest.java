@@ -4,9 +4,22 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.LinkedBlockingDeque;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 
 @Slf4j
 public class CompletableFutureTest {
+    /**
+     * CPU核数
+     */
+    private static final int AVAILABLE_PROCESSORS = Runtime.getRuntime().availableProcessors();
+
+    private static ThreadPoolExecutor executor = new ThreadPoolExecutor(
+            AVAILABLE_PROCESSORS,  //核心线程数
+            3 * AVAILABLE_PROCESSORS,  //最大线程数
+            3, TimeUnit.SECONDS,  //keepAliveTime
+            new LinkedBlockingDeque<>(AVAILABLE_PROCESSORS * 5));  //阻塞队列
 
     @Test
     public void test_run() {
@@ -21,7 +34,7 @@ public class CompletableFutureTest {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        });
+        }, executor);
         System.out.println("主线程继续运行...");
 
         // 主线程继续运行
@@ -30,6 +43,7 @@ public class CompletableFutureTest {
 
     @Test
     public void test_supply() {
+
         // 创建一个 CompletableFuture，返回结果为 String
         // supplyAsync 需要返回结果
         CompletableFuture<String> future = CompletableFuture.supplyAsync(() -> {
@@ -42,7 +56,7 @@ public class CompletableFutureTest {
                 e.printStackTrace();
                 return "任务失败";
             }
-        });
+        }, executor);
 
         // 处理异步任务的结果，而不阻塞主线程
         future.thenAccept(result -> {
