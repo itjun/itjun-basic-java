@@ -31,10 +31,14 @@ public class CompletableFutureTest {
                 System.out.println("异步任务开始...");
                 Thread.sleep(2000); // 休眠2秒钟
                 System.out.println("异步任务完成");
+                throw new RuntimeException("Oops!");
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                log.error(e.getMessage(), e);
             }
-        }, executor);
+        }, executor).whenComplete((result, throwable) -> {
+            if (throwable != null)
+                log.error(throwable.getMessage(), throwable);
+        });
         System.out.println("主线程继续运行...");
 
         // 主线程继续运行
@@ -53,10 +57,13 @@ public class CompletableFutureTest {
                 Thread.sleep(2000); // 模拟耗时操作
                 return "async 异步任务执行完毕";
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                log.error(e.getMessage(), e);
                 return "任务失败";
             }
-        }, executor);
+        }, executor).whenComplete((result, throwable) -> {
+            if (throwable != null)
+                log.error(throwable.getMessage(), throwable);
+        });
 
         // 处理异步任务的结果，而不阻塞主线程
         future.thenAccept(result -> {
@@ -70,7 +77,7 @@ public class CompletableFutureTest {
         try {
             Thread.sleep(3000); // 主线程的其他操作
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            log.error(e.getMessage(), e);
         }
 
         System.out.println("main 主线程的任务执行完毕");
