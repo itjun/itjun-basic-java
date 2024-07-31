@@ -6,6 +6,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
 
 public class WeightRoundRobin {
 
@@ -16,7 +18,8 @@ public class WeightRoundRobin {
      */
     public static String getServer() {
         // 重建一个Map，避免服务器的上下线导致的并发问题
-        Map<String, Integer> serverMap = new HashMap<>(IPMap.items);
+        Map<String, Integer> serverMap = new ConcurrentHashMap<>(IPMap.items) {
+        };
 
         // 取得Ip地址List
         Set<String> keySet = serverMap.keySet();
