@@ -1,5 +1,7 @@
 package io.itjun.basic.base64;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.ByteArrayInputStream;
@@ -14,6 +16,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Base64;
 
+@Slf4j
 public class Base64UtilsIO {
 
     public static void main(String[] args) {
@@ -23,7 +26,7 @@ public class Base64UtilsIO {
             String tempBase64Str = Base64UtilsIO.fileToBase64Str(filePath);
             write(tempBase64Str);
         } catch (IOException e) {
-            e.printStackTrace();
+            log.error(e.getMessage(), e);
         }
     }
 
