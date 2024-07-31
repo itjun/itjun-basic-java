@@ -43,7 +43,7 @@ class StrLenComparator implements Comparator {
          * if(s1.length()>s2.length()) return 1; if(s1.length()==s2.length()) return 0;
          */
 
-        int num = new Integer(s1.length()).compareTo(new Integer(s2.length()));
+        int num = Integer.compare(s1.length(), s2.length());
         if (num == 0)
             return s1.compareTo(s2);
 
