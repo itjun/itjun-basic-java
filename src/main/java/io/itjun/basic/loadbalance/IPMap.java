@@ -1,4 +1,4 @@
-package io.itjun.basic.slb;
+package io.itjun.basic.loadbalance;
 
 import java.util.HashMap;
 
