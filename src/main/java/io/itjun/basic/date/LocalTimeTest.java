@@ -15,6 +15,7 @@ public class LocalTimeTest {
         // LocalTime 包含毫秒
         LocalTime time_now = LocalTime.now();
         log.info("{}", time_now);
+        log.info("{}", time_now.getHour()); // 时
 
         // LocalTime 清除毫秒
         LocalTime now = LocalTime.now().withNano(0);
